@@ -8,13 +8,13 @@ classification: "UNCLASSIFIED // FOR INFORMATIONAL USE"
 tags: [daily, intel, world-events, US-impact]
 ---
 
-UNCLASSIFIED // FOR INFORMATIONAL USE
+UNCLASSIFIED // FOR INFORMATIONAL USE  
 
-DAILY WORLD EVENTS INTELLIGENCE SUMMARY
-DTG: 210700R SEP 26 (America/Chicago)
-PERIOD COVERED: ~0700 hours 20 SEP 26 through 0700 hours 21 SEP 26 (CT)
-PREPARED FOR: Kyle Sibley
-CLASSIFICATION: UNCLASSIFIED // FOR INFORMATIONAL USE
+DAILY WORLD EVENTS INTELLIGENCE SUMMARY  
+DTG: 210700R SEP 26 (America/Chicago)  
+PERIOD COVERED: ~0700 hours 20 SEP 26 through 0700 hours 21 SEP 26 (CT)  
+PREPARED FOR: Kyle Sibley  
+CLASSIFICATION: UNCLASSIFIED // FOR INFORMATIONAL USE  
 
 EXECUTIVE SUMMARY
 US–Iran hostilities remain the dominant US-impact driver: President Trump stated he is in “deciding mode” on options ranging from a deal to intensified military/economic pressure, while Iran’s central military command claimed US/allied strike preparations and threatened “painful” retaliation against US regional interests. Concurrently, Iran-aligned Houthis pressed advances in Yemen and claimed weekend strikes toward Riyadh; NYT reporting (relayed by Reuters, unverified by CENTCOM) said Trump aborted planned US airstrikes on Houthis late 20 SEP as munitions were being loade
