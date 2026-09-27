@@ -17,4 +17,5 @@ Chronological catalog of archived intel reports. Newest first.
 
 | Week ending (Sunday) | File | Period |
 |----------------------|------|--------|
+| 2026-09-27 | [weekly/2026-09-27.md](./weekly/2026-09-27.md) | 2026-09-20 to 2026-09-27 |
 | 2026-09-20 | [weekly/2026-09-20.md](./weekly/2026-09-20.md) | 2026-09-13 to 2026-09-20 |
