@@ -25,18 +25,23 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.sections
+    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
     - toc.follow
+    - content.code.copy
 markdown_extensions:
   - tables
   - attr_list
   - toc:
       permalink: true
+      toc_depth: 2
   - pymdownx.superfences
 plugins:
   - search
   - tags
+extra_css:
+  - stylesheets/extra.css
 extra:
   generator: false

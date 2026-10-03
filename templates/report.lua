@@ -59,7 +59,13 @@ function Header(el)
   if el.level == 1 then
     return {}
   end
-  el.identifier = slug(pandoc.utils.stringify(el))
+  local s = pandoc.utils.stringify(el)
+  -- Normalize ITEM / standing section headings to level 2 so section-div
+  -- ids and CSS hooks stay stable whether the Markdown used ## or ###.
+  if el.level > 2 and (s:match("^ITEM%s+%d+") or section_title(s)) then
+    el.level = 2
+  end
+  el.identifier = slug(s)
   return el
 end
 
@@ -108,9 +114,11 @@ local function collapse(s)
   return (s:gsub("%s+", " "):gsub("^%s+", ""):gsub("%s+$", ""))
 end
 
--- These files often omit the blank line Markdown needs before a list,
--- so pandoc glues "ITEM 1: …" and "- LABEL:" into one paragraph.
--- Split that presentation back apart. Do not edit the Markdown.
+-- Older archive files omitted the blank line Markdown needs before a list,
+-- so pandoc glued "ITEM 1: …" and "- LABEL:" into one paragraph.
+-- Split that presentation back apart when needed. Prefer real ATX headings
+-- and a blank line before each item's bullet list in the Markdown source;
+-- this filter still repairs glued paragraphs so PDFs stay correct.
 local prose_titles = {
   "EXECUTIVE SUMMARY",
   "SOURCE LIMITATIONS",

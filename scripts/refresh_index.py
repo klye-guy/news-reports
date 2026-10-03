@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Refresh LATEST_* pointers, current/ copies, and INDEX.md after a new report is added."""
+from __future__ import annotations
+
+import re
+from collections import defaultdict
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 daily = sorted((root / "daily").glob("????-??-??.md"))
 weekly = sorted((root / "weekly").glob("????-??-??.md"))
 current = root / "current"
+
+ITEM_TITLE = re.compile(r"(?m)^(?:##\s+)?ITEM\s+\d+:\s*(.+)$")
 
 
 def front(path: Path):
@@ -18,7 +24,37 @@ def front(path: Path):
                 if ":" in line:
                     k, v = line.split(":", 1)
                     meta[k.strip()] = v.strip().strip('"')
-    return meta
+    return meta, text
+
+
+def subject_line(text: str, meta: dict) -> str:
+    m = ITEM_TITLE.search(text)
+    if m:
+        return m.group(1).strip()
+    return meta.get("title", "").strip()
+
+
+def month_label(date: str) -> str:
+    try:
+        y, m, _ = date.split("-")
+        names = [
+            "",
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ]
+        return f"{names[int(m)]} {y}"
+    except Exception:
+        return date[:7]
 
 
 def copy_bytes(src: Path, dest: Path):
@@ -50,35 +86,63 @@ if weekly:
     if pdf.is_file():
         copy_bytes(pdf, current / "latest-weekly.pdf")
 
+
+def group_rows(paths: list[Path], kind: str) -> list[str]:
+    """Newest-first month sections with subject column."""
+    entries = []
+    for p in reversed(paths):
+        meta, text = front(p)
+        date = p.stem
+        subj = subject_line(text, meta).replace("|", "\\|")
+        entries.append((month_label(date), date, p, meta, subj))
+
+    by_month: dict[str, list] = defaultdict(list)
+    order: list[str] = []
+    for month, date, p, meta, subj in entries:
+        if month not in by_month:
+            order.append(month)
+        by_month[month].append((date, p, meta, subj))
+
+    lines: list[str] = []
+    for month in order:
+        lines.append(f"### {month}")
+        lines.append("")
+        if kind == "daily":
+            lines.append("| Date | Subject | Markdown | PDF |")
+            lines.append("|------|---------|----------|-----|")
+            for date, p, meta, subj in by_month[month]:
+                lines.append(
+                    f"| {date} | {subj} | [daily/{p.name}](./daily/{p.name}) | {pdf_cell(p)} |"
+                )
+        else:
+            lines.append("| Week ending | Subject | Markdown | PDF |")
+            lines.append("|-------------|---------|----------|-----|")
+            for date, p, meta, subj in by_month[month]:
+                period = meta.get("period", "")
+                # keep period discoverable in subject cell footnote-style when useful
+                lines.append(
+                    f"| {date} | {subj} | [weekly/{p.name}](./weekly/{p.name}) | {pdf_cell(p)} |"
+                )
+        lines.append("")
+    return lines
+
+
 lines = [
     "# Index",
     "",
-    "Chronological catalog of archived intel reports. Newest first.",
+    "Chronological catalog of archived intel reports. Newest first, grouped by month.",
     "",
-    "Letter PDFs, when present, sit beside the dated markdown, and the latest pair is also in current/.",
+    "Each row uses a one-line subject taken from the report (first ITEM title). "
+    "Letter PDFs, when present, sit beside the dated markdown; the latest pair is also in `current/`.",
     "",
     "## Daily",
     "",
-    "| Date | File | DTG | PDF |",
-    "|------|------|-----|-----|",
 ]
-for p in reversed(daily):
-    meta = front(p)
-    lines.append(
-        f"| {p.stem} | [daily/{p.name}](./daily/{p.name}) | {meta.get('dtg', '')} | {pdf_cell(p)} |"
-    )
+lines += group_rows(daily, "daily")
 lines += [
-    "",
     "## Weekly",
     "",
-    "| Week ending (Sunday) | File | Period | PDF |",
-    "|----------------------|------|--------|-----|",
 ]
-for p in reversed(weekly):
-    meta = front(p)
-    lines.append(
-        f"| {p.stem} | [weekly/{p.name}](./weekly/{p.name}) | {meta.get('period', '')} | {pdf_cell(p)} |"
-    )
-lines.append("")
+lines += group_rows(weekly, "weekly")
 (root / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
 print(f"Updated LATEST_*, current/, and INDEX ({len(daily)} daily, {len(weekly)} weekly)")
