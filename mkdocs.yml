@@ -1,0 +1,42 @@
+site_name: News Reports
+site_description: Daily and weekly world-events intelligence summaries
+site_url: https://klye-guy.github.io/news-reports/
+repo_url: https://github.com/klye-guy/news-reports
+repo_name: klye-guy/news-reports
+docs_dir: docs
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+markdown_extensions:
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+plugins:
+  - search
+  - tags
+extra:
+  generator: false
