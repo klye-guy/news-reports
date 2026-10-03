@@ -1,6 +1,6 @@
 # News Reports — World Events Intelligence Archive
 
-Private archive of US military-style open-source intelligence summaries prepared for Kyle Sibley.
+Open-source intelligence summaries in a US military brief format, prepared for Kyle Sibley.
 
 **Classification:** UNCLASSIFIED // FOR INFORMATIONAL USE ONLY — Not a U.S. Government product.
 
