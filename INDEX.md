@@ -6,6 +6,7 @@ Chronological catalog of archived intel reports. Newest first.
 
 | Date | File | DTG |
 |------|------|-----|
+| 2026-10-03 | [daily/2026-10-03.md](./daily/2026-10-03.md) | 030721Z/CDT OCT 26 |
 | 2026-10-02 | [daily/2026-10-02.md](./daily/2026-10-02.md) | 020719Z/CDT OCT 26 |
 | 2026-10-01 | [daily/2026-10-01.md](./daily/2026-10-01.md) | 011225Z/CDT OCT 26 |
 | 2026-09-30 | [daily/2026-09-30.md](./daily/2026-09-30.md) | 300725R SEP 26 |
