@@ -18,8 +18,23 @@ daily/YYYY-MM-DD.md     # 24-hour intel summary (0700 CT cadence)
 weekly/YYYY-MM-DD.md    # Week rollup; filename = Sunday (week ending)
 LATEST_DAILY.md         # Copy of most recent daily
 LATEST_WEEKLY.md        # Copy of most recent weekly
+current/                # Latest daily (and weekly) Markdown + letter PDF copies
 INDEX.md                # Chronological catalog (auto-maintained)
 ```
+
+## PDF renders
+
+GitHub Markdown is the searchable source of truth. A letter-size PDF is a print render of the same file, not a second set of facts. GitHub preview and the PDF are meant to look different.
+
+- Latest pair only: `daily/YYYY-MM-DD.pdf` beside the latest daily Markdown, and `weekly/YYYY-MM-DD.pdf` beside the latest weekly when that file exists.
+- `current/latest-daily.md` and `current/latest-daily.pdf` are real-file copies of that latest daily pair (same bytes). `current/latest-weekly.md` and `current/latest-weekly.pdf` match the latest weekly when one exists.
+- Rebuild one report (the output directory must already exist):
+
+```bash
+templates/build-pdf.sh daily/YYYY-MM-DD.md daily/YYYY-MM-DD.pdf
+```
+
+Needs `pandoc`, `node`, and `google-chrome`. See `templates/README.md`.
 
 ## How to find things
 

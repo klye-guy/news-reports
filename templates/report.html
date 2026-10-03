@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$if(title)$$title$$else$Intel report$endif$</title>
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body class="report report-$report_type$">
+  <header class="mast">
+    <p class="classline">$classification_line$</p>
+    <p class="kicker"><span class="kind">$kind_label$</span></p>
+$if(title)$
+    <h1 class="doctitle">$title$</h1>
+$endif$
+$if(dtg)$
+    <p class="meta"><span class="ml">DTG</span> $dtg$</p>
+$endif$
+$if(period)$
+    <p class="meta"><span class="ml">Period</span> $period$</p>
+$endif$
+$if(prepared_for)$
+    <p class="meta"><span class="ml">Prepared for</span> $prepared_for$</p>
+$endif$
+$if(tags)$
+    <ul class="tags">
+$for(tags)$
+      <li>$tags$</li>
+$endfor$
+    </ul>
+$endif$
+  </header>
+  <main>
+$body$
+  </main>
+  <footer class="colophon">America/Chicago · Markdown is the searchable archive</footer>
+</body>
+</html>

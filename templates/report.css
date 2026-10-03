@@ -1,0 +1,318 @@
+/* Intel brief — letter PDF.
+   Markdown stays the archive; this stylesheet is presentation only.
+   Fonts are named, not embedded. */
+
+:root {
+  --ink: #1c1917;
+  --muted: #57534e;
+  --faint: #8a847c;
+  --navy: #1b3a4b;
+  --rule: #e4ddd4;
+  --paper: #fffcf8;
+  --band: #f6f3ee;
+  --serif: "Source Serif Pro", Palatino, "Palatino Linotype", serif;
+  --sans: "Source Sans 3", sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+@page {
+  size: letter;
+  margin: 0.52in 0.58in 0.48in 0.58in;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 10pt;
+  line-height: 1.38;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body { hyphens: manual; }
+
+p { margin: 0 0 0.42em; }
+p:last-child { margin-bottom: 0; }
+
+/* Masthead ------------------------------------------------ */
+
+.mast {
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.classline {
+  margin: 0 0 8px;
+  padding: 3px 8px;
+  background: var(--navy);
+  color: #f7f4ef;
+  font-family: var(--sans);
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.kicker {
+  margin: 0 0 2px;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+h1.doctitle {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 16.5pt;
+  line-height: 1.15;
+  letter-spacing: -0.012em;
+  margin: 0 0 6px;
+  color: var(--ink);
+  hyphens: manual;
+}
+
+.meta {
+  margin: 0 0 1px;
+  font-size: 8.5pt;
+  line-height: 1.35;
+  color: #3f3a36;
+}
+
+.meta .ml {
+  font-weight: 700;
+  font-size: 7.5pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-right: 0.35em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 4px;
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+.tags li {
+  font-size: 7.5pt;
+  letter-spacing: 0.01em;
+  color: var(--navy);
+  background: #eef2f4;
+  border-radius: 99px;
+  padding: 0 6px;
+  line-height: 1.45;
+}
+
+/* Body ---------------------------------------------------- */
+
+main > p {
+  margin: 0 0 0.18em;
+  font-size: 9pt;
+  line-height: 1.32;
+  color: #3f3a36;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 11.5pt;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+  margin: 0.72em 0 0.28em;
+  padding-top: 0.38em;
+  border-top: 1px solid var(--rule);
+  break-after: avoid;
+  page-break-after: avoid;
+  hyphens: manual;
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 11pt;
+  font-weight: 600;
+  margin: 0.6em 0 0.2em;
+  break-after: avoid;
+  page-break-after: avoid;
+  hyphens: manual;
+}
+
+p, li { orphans: 3; widows: 3; }
+
+#executive-summary > h2,
+section > h2:first-child {
+  /* keep headings with the following text; no forced page breaks */
+}
+
+#executive-summary {
+  margin-top: 2px;
+}
+
+#executive-summary > h2 {
+  margin-top: 0.15em;
+  padding-top: 0;
+  border-top: none;
+  font-family: var(--sans);
+  font-size: 8.25pt;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+#executive-summary > p {
+  font-family: var(--serif);
+  font-size: 10.5pt;
+  line-height: 1.38;
+  color: var(--ink);
+}
+
+/* ITEM blocks stay flowing text, separated by the heading rule. */
+section[id^="item-"] {
+  margin: 0;
+}
+
+section[id^="item-"] > h2 {
+  font-size: 11.25pt;
+}
+
+/* Field labels: "- LABEL: content" -------------------------------- */
+
+main ul {
+  list-style: none;
+  margin: 0.12em 0 0.45em;
+  padding: 0;
+}
+
+main li {
+  margin: 0 0 0.32em;
+}
+
+main ul li:not(:has(.lbl)) {
+  position: relative;
+  padding-left: 0.85em;
+}
+
+main ul li:not(:has(.lbl))::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--faint);
+}
+
+main ul li:has(.lbl) {
+  display: grid;
+  grid-template-columns: 1.95in minmax(0, 1fr);
+  column-gap: 0.42em;
+  align-items: start;
+  padding-left: 0;
+}
+
+main ul li:has(.lbl) > p {
+  display: contents;
+}
+
+.lbl {
+  font-weight: 650;
+  font-size: 8pt;
+  line-height: 1.3;
+  color: var(--navy);
+  padding-top: 0.12em;
+}
+
+.val {
+  min-width: 0;
+}
+
+/* Cost snapshot --------------------------------------------------- */
+
+#mn-us-cost-snapshot {
+  background: var(--band);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--navy);
+  padding: 6px 10px 7px;
+  margin: 8px 0 8px;
+}
+
+#mn-us-cost-snapshot > h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  font-family: var(--sans);
+  font-size: 8.25pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+#mn-us-cost-snapshot .val {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Closers. No break-before: page — these sections are short and a
+   forced break leaves a large empty region. */
+#unconfirmed-monitor > h2,
+#source-limitations > h2,
+#gaps-limitations-this-run > h2 {
+  font-family: var(--sans);
+  font-size: 8.25pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+#source-limitations > p,
+#gaps-limitations-this-run > p,
+#unconfirmed-monitor li {
+  font-size: 9pt;
+  line-height: 1.36;
+  color: #3f3a36;
+}
+
+/* Tables (rare in these briefs). Wide class is for 4+ columns. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.3em 0 0.6em;
+  font-size: 9pt;
+}
+
+th, td {
+  border-bottom: 1px solid var(--rule);
+  padding: 2px 5px 2px 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.wide {
+  font-size: 8pt;
+}
+
+table.wide th,
+table.wide td {
+  padding-right: 4px;
+}
+
+.colophon {
+  margin-top: 12px;
+  padding-top: 4px;
+  border-top: 1px solid var(--rule);
+  font-size: 7.5pt;
+  line-height: 1.3;
+  color: var(--muted);
+}

@@ -2,6 +2,8 @@
 
 Chronological catalog of archived intel reports. Newest first.
 
+Letter PDFs are built only for the latest daily and latest weekly (same date as the Markdown). Copies of that pair also live in `current/`.
+
 ## Daily
 
 | Date | File | DTG |
