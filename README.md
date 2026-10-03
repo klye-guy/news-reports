@@ -4,6 +4,10 @@ Private archive of US military-style open-source intelligence summaries prepared
 
 **Classification:** UNCLASSIFIED // FOR INFORMATIONAL USE ONLY — Not a U.S. Government product.
 
+## Browse
+
+The site is rebuilt on every push to `main` and published at [klye-guy.github.io/news-reports](https://klye-guy.github.io/news-reports/). Dated Markdown in this repo remains the source of truth. `scripts/prepare_docs.py` stages `daily/` and `weekly/` for MkDocs; it does not rewrite the archive.
+
 ## Start here (current reports)
 
 | Report | Path |
