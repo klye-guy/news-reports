@@ -10,7 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
-| 2026-10-11 | Trump “No Strikes Before Midterms” Pledge; Qatari Channel Alive; Tehran Awaits Formal US Position | [daily/2026-10-11.md](./daily/2026-10-11.md) |  |
+| 2026-10-11 | Trump “No Strikes Before Midterms” Pledge; Qatari Channel Alive; Tehran Awaits Formal US Position | [daily/2026-10-11.md](./daily/2026-10-11.md) | [PDF](./daily/2026-10-11.pdf) |
 | 2026-10-04 | Trump Sat “Easy Way or Hard Way”; Hegseth “Never Ever” Nuke Line + Ironclad Blockade; Camp David Still Opaque | [daily/2026-10-04.md](./daily/2026-10-04.md) | [PDF](./daily/2026-10-04.pdf) |
 | 2026-10-03 | Camp David NS Session; Al Jazeera Confirms Roosevelt CSG + Makin Island; Tehran Source Flags “Major Round of Fighting” | [daily/2026-10-03.md](./daily/2026-10-03.md) | [PDF](./daily/2026-10-03.pdf) |
 | 2026-10-02 | Trump “Fair Deal or Won't Exist”; WSJ/Reuters Third Carrier + ~10k Troops Eyed; Diplomacy Still Sequencing-Deadlocked | [daily/2026-10-02.md](./daily/2026-10-02.md) |  |
@@ -36,6 +36,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Week ending | Subject | Markdown | PDF |
 |-------------|---------|----------|-----|
+| 2026-10-11 | Iran — strike-prep reports, then Trump "no strikes before midterms" pledge; Qatari channel alive, no deal text (Significance: HIGH) | [weekly/2026-10-11.md](./weekly/2026-10-11.md) |  |
 | 2026-10-04 | Dual-track Iran week — formal US reply via Qatar, then “easy/hard way” decision rhetoric without date or modality (Significance: HIGH) | [weekly/2026-10-04.md](./weekly/2026-10-04.md) | [PDF](./weekly/2026-10-04.pdf) |
 
 ### September 2026
