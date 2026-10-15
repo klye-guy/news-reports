@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-15 | Hormuz — GFS Pride Sinks, Iran Tells Reuters It Changed Tactics to Sway US Vote; Attack Tempo at War High | [daily/2026-10-15.md](./daily/2026-10-15.md) | [PDF](./daily/2026-10-15.pdf) |
 | 2026-10-14 | Houthi–Saudi War Widens — Aramco Dhahran Building Hit, Coalition Strikes Sanaa Fuel Site; Trump Blames Iran, Floats Erdogan Role | [daily/2026-10-14.md](./daily/2026-10-14.md) |  |
 | 2026-10-13 | Houthi Strikes Kill at Least 14 at Riyadh Airport, Including an American; Trump Weighs Joining Saudi Campaign | [daily/2026-10-13.md](./daily/2026-10-13.md) |  |
 | 2026-10-11 | Trump “No Strikes Before Midterms” Pledge; Qatari Channel Alive; Tehran Awaits Formal US Position | [daily/2026-10-11.md](./daily/2026-10-11.md) | [PDF](./daily/2026-10-11.pdf) |
