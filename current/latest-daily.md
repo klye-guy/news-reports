@@ -96,7 +96,7 @@ Hormuz attacks hit their highest tempo of the war, and the first merchant ship o
 
 - IRGC claim that the sunk container ship hit a mine (contradicted by a US official; Singapore says unknown projectile).
 - Coalition claim of a cruise missile intercepted over Medina (denied by Houthis; no evidence released).
-- ILKHA report that indirect Iran–US talks resumed in Oman (single outlet, not corroborated); a “CNNBC” site report of a US–Iran interim agreement to reopen Hormuz (not a recognized outlet, no corroboration) — both treated as false until confirmed.
+- ILKHA report that indirect Iran–US talks resumed in Oman (single outlet, not corroborated); a “CNNBC” site report of a US–Iran interim agreement to reopen Hormuz (not a recognized outlet, no corroboration) — both treated as unverified.
 - Iranian officials' “complete closure soon” claim (stated intent, not an observed fact).
 - Houthi claims of hits on an Aramco refinery in Riyadh and King Khalid airport this cycle (no Saudi confirmation).
 - Trump's “300 percent inflation” figure for Iran (unsourced, carried from 14 OCT).
