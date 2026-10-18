@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-18 | Hormuz and Gulf Shipping — Tug Hit off Khor Fakkan (UKMTO 177-26), LNG Tanker Fired On off Yemen (176-26), IRGC Now Claims Two Mined Tankers | [daily/2026-10-18.md](./daily/2026-10-18.md) | [PDF](./daily/2026-10-18.pdf) |
 | 2026-10-17 | Hormuz and Gulf Shipping — Record Attack Tempo, RPG Strike off Al Jubayl, IRGC Mine Claim | [daily/2026-10-17.md](./daily/2026-10-17.md) | [PDF](./daily/2026-10-17.pdf) |
 | 2026-10-16 | Hormuz — Two Sinkings Confirmed in CNN/IMO Cycle; JMIC Keeps SEVERE; Oil Flow Still Compressed | [daily/2026-10-16.md](./daily/2026-10-16.md) | [PDF](./daily/2026-10-16.pdf) |
 | 2026-10-15 | Hormuz — GFS Pride Sinks, Iran Tells Reuters It Changed Tactics to Sway US Vote; Attack Tempo at War High | [daily/2026-10-15.md](./daily/2026-10-15.md) | [PDF](./daily/2026-10-15.pdf) |
