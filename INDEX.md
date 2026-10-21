@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-21 | Hormuz and Gulf Shipping — UKMTO 179-26 Off Bukha and 180-26 Off Al Faw; IRGC Claims Mined Supertanker; Rubio's "U-Boat" Charge; Iraq Shuts Sheeb Crossing | [daily/2026-10-21.md](./daily/2026-10-21.md) | [PDF](./daily/2026-10-21.pdf) |
 | 2026-10-20 | Hormuz and Gulf Shipping — IRGC Claims Two More Mined Tankers; UKMTO Advisory 178-26 Off Duqm; Iran's Konarak and MQ-9 Claims; Rubio Says Iran Exports No Oil Through the Strait | [daily/2026-10-20.md](./daily/2026-10-20.md) | [PDF](./daily/2026-10-20.pdf) |
 | 2026-10-19 | Hormuz and Gulf Shipping — No New UKMTO Warning Past 177-26; IRGC Claims Third Mined Tanker; Gulf Crude Flows Down Sharply (Kpler) | [daily/2026-10-19.md](./daily/2026-10-19.md) | [PDF](./daily/2026-10-19.pdf) |
 | 2026-10-18 | Hormuz and Gulf Shipping — Tug Hit off Khor Fakkan (UKMTO 177-26), LNG Tanker Fired On off Yemen (176-26), IRGC Now Claims Two Mined Tankers | [daily/2026-10-18.md](./daily/2026-10-18.md) | [PDF](./daily/2026-10-18.pdf) |
