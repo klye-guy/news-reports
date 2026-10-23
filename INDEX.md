@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-23 | Hormuz and Gulf Shipping — Trump Says Iran Is "Making Up Fake Hits"; CENTCOM Calls Mine Claims Incorrect; Lloyd's List Describes Night "Dark Shuttle"; UAE Oil Spill Closes Beaches | [daily/2026-10-23.md](./daily/2026-10-23.md) | [PDF](./daily/2026-10-23.pdf) |
 | 2026-10-22 | Hormuz and Gulf Shipping — IRGC Claims Seven Tankers Hit or Mined; UKMTO Silent; IRGC Threatens US Bases and Undersea Cables; IMO Warns Mines Remain; Treasury Hits Shipping Network | [daily/2026-10-22.md](./daily/2026-10-22.md) | [PDF](./daily/2026-10-22.pdf) |
 | 2026-10-21 | Hormuz and Gulf Shipping — UKMTO 179-26 Off Bukha and 180-26 Off Al Faw; IRGC Claims Mined Supertanker; Rubio's "U-Boat" Charge; Iraq Shuts Sheeb Crossing | [daily/2026-10-21.md](./daily/2026-10-21.md) | [PDF](./daily/2026-10-21.pdf) |
 | 2026-10-20 | Hormuz and Gulf Shipping — IRGC Claims Two More Mined Tankers; UKMTO Advisory 178-26 Off Duqm; Iran's Konarak and MQ-9 Claims; Rubio Says Iran Exports No Oil Through the Strait | [daily/2026-10-20.md](./daily/2026-10-20.md) | [PDF](./daily/2026-10-20.pdf) |
