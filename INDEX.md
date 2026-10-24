@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-24 | Hormuz and Gulf Shipping — UKMTO 181-26 Confirms Tanker Hit Near Limah; Iran Says "Non-Compliant" Traffic Halted; UAE Spill Tied to Gem No. 2; Iran's Military Chief Bars US Warships From the Gulf | [daily/2026-10-24.md](./daily/2026-10-24.md) | [PDF](./daily/2026-10-24.pdf) |
 | 2026-10-23 | Hormuz and Gulf Shipping — Trump Says Iran Is "Making Up Fake Hits"; CENTCOM Calls Mine Claims Incorrect; Lloyd's List Describes Night "Dark Shuttle"; UAE Oil Spill Closes Beaches | [daily/2026-10-23.md](./daily/2026-10-23.md) | [PDF](./daily/2026-10-23.pdf) |
 | 2026-10-22 | Hormuz and Gulf Shipping — IRGC Claims Seven Tankers Hit or Mined; UKMTO Silent; IRGC Threatens US Bases and Undersea Cables; IMO Warns Mines Remain; Treasury Hits Shipping Network | [daily/2026-10-22.md](./daily/2026-10-22.md) | [PDF](./daily/2026-10-22.pdf) |
 | 2026-10-21 | Hormuz and Gulf Shipping — UKMTO 179-26 Off Bukha and 180-26 Off Al Faw; IRGC Claims Mined Supertanker; Rubio's "U-Boat" Charge; Iraq Shuts Sheeb Crossing | [daily/2026-10-21.md](./daily/2026-10-21.md) | [PDF](./daily/2026-10-21.pdf) |
