@@ -49,7 +49,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Week ending | Subject | Markdown | PDF |
 |-------------|---------|----------|-----|
-| 2026-10-25 | Iran strike track and diplomacy — post-midterm strike plans reported; Trump from "leave right now" to "finish them off"; "no strike today"; Iran mixes deal signals with Hormuz defiance (Significance: HIGH) | [weekly/2026-10-25.md](./weekly/2026-10-25.md) |  |
+| 2026-10-25 | Iran strike track and diplomacy — post-midterm strike plans reported; Trump from "leave right now" to "finish them off"; "no strike today"; Iran mixes deal signals with Hormuz defiance (Significance: HIGH) | [weekly/2026-10-25.md](./weekly/2026-10-25.md) | [PDF](./weekly/2026-10-25.pdf) |
 | 2026-10-18 | Iran strike and diplomacy track — pledge holds on paper; MOAB/Pickaxe Mountain plans, "finish the job," Netanyahu endorsement; seven-day plan still stuck (Significance: HIGH) | [weekly/2026-10-18.md](./weekly/2026-10-18.md) | [PDF](./weekly/2026-10-18.pdf) |
 | 2026-10-11 | Iran — strike-prep reports, then Trump "no strikes before midterms" pledge; Qatari channel alive, no deal text (Significance: HIGH) | [weekly/2026-10-11.md](./weekly/2026-10-11.md) | [PDF](./weekly/2026-10-11.pdf) |
 | 2026-10-04 | Dual-track Iran week — formal US reply via Qatar, then “easy/hard way” decision rhetoric without date or modality (Significance: HIGH) | [weekly/2026-10-04.md](./weekly/2026-10-04.md) | [PDF](./weekly/2026-10-04.pdf) |

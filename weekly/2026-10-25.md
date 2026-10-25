@@ -142,8 +142,8 @@ Built from the seven dailies (19–25 OCT) plus fresh 25 OCT afternoon checks: C
 - Erem News report that Trump is weighing Kharg Island strikes; Qatari mediators in Tehran (Al Jazeera headline only; an earlier Qatari-delegation report was denied by an IRGC-affiliated outlet).
 - Flight-tracking reports of Russian Il-76 evacuations of Rosatom staff from Bushehr; X summaries of a Munir "ultimatum," "Mosaic Defense" activation, a "father of all bombs," and a Qatar/Pakistan "preliminary agreement."
 - X posts claiming Hormuz reopens "tomorrow" and gas falls to $2.50: no source; treat as false.
-- Fox's and the NY Post's anonymous-source claims about Omar's name and DNA evidence; the long-running claim repeated by Crowder, Timcast, and Trump that Omar married her brother (denied; not established by any court or charge; a first-term inquiry reportedly "yielded insufficient evidence").
-- Daily Wire and Timcast claims that two pollsters were "exposed for fabricating midterm data": firms and evidence not verified here.
+- Fox's and the NY Post's anonymous-source claims about Omar's name and DNA evidence; the long-running claim repeated by Crowder and Trump that Omar married her brother (denied; not established by any court or charge; a first-term inquiry reportedly "yielded insufficient evidence").
+- Daily Wire District Club claim that two pollsters were "exposed for fabricating midterm data": firms and evidence not verified here.
 - Trump's claim that Iran's inflation is 301%: not checked against a data source.
 
 UNCLASSIFIED // FOR INFORMATIONAL USE  
