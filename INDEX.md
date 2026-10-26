@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-26 | Iran Strike Track and US Posture — Trump: "I Have a Decision to Make," "There Will Not Be a Strike Today"; CENTCOM Commander Visits Hormuz, Says Shipping Lanes Cleared of Mines | [daily/2026-10-26.md](./daily/2026-10-26.md) | [PDF](./daily/2026-10-26.pdf) |
 | 2026-10-25 | Iran Strike Track and US Posture — Trump: Strike "Maybe Tomorrow" or "a Nice, Big, Beautiful Agreement"; CENTCOM Follow-Up Options Reported Ready; USS George Washington Loads GBU-31 Bunker-Busters; Third Carrier and 13th MEU En Route | [daily/2026-10-25.md](./daily/2026-10-25.md) | [PDF](./daily/2026-10-25.pdf) |
 | 2026-10-24 | Hormuz and Gulf Shipping — UKMTO 181-26 Confirms Tanker Hit Near Limah; Iran Says "Non-Compliant" Traffic Halted; UAE Spill Tied to Gem No. 2; Iran's Military Chief Bars US Warships From the Gulf | [daily/2026-10-24.md](./daily/2026-10-24.md) | [PDF](./daily/2026-10-24.pdf) |
 | 2026-10-23 | Hormuz and Gulf Shipping — Trump Says Iran Is "Making Up Fake Hits"; CENTCOM Calls Mine Claims Incorrect; Lloyd's List Describes Night "Dark Shuttle"; UAE Oil Spill Closes Beaches | [daily/2026-10-23.md](./daily/2026-10-23.md) | [PDF](./daily/2026-10-23.pdf) |
