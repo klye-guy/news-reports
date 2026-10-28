@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-28 | Iran Strike Track — WSJ: US Warns Gulf States of a Short, Intense Campaign After the Midterms; Trump "Anything's Possible"; War Cost Passes $47 Billion | [daily/2026-10-28.md](./daily/2026-10-28.md) | [PDF](./daily/2026-10-28.pdf) |
 | 2026-10-27 | Iran Strike Track — CNN: US Ready for Major Strikes "Within 96 Hours" of an Order; Trump Names Pickaxe Mountain; Israel Told to Wait for Joint Operations | [daily/2026-10-27.md](./daily/2026-10-27.md) | [PDF](./daily/2026-10-27.pdf) |
 | 2026-10-26 | Iran Strike Track and US Posture — Trump: "I Have a Decision to Make," "There Will Not Be a Strike Today"; CENTCOM Commander Visits Hormuz, Says Shipping Lanes Cleared of Mines | [daily/2026-10-26.md](./daily/2026-10-26.md) | [PDF](./daily/2026-10-26.pdf) |
 | 2026-10-25 | Iran Strike Track and US Posture — Trump: Strike "Maybe Tomorrow" or "a Nice, Big, Beautiful Agreement"; CENTCOM Follow-Up Options Reported Ready; USS George Washington Loads GBU-31 Bunker-Busters; Third Carrier and 13th MEU En Route | [daily/2026-10-25.md](./daily/2026-10-25.md) | [PDF](./daily/2026-10-25.pdf) |
