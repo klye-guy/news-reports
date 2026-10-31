@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-10-31 | Iran Diplomacy — Qatari 12-Hour Tehran Talks Move to Doha; Unconfirmed Report of US Delegation for Direct Talks; Draft Terms Leak | [daily/2026-10-31.md](./daily/2026-10-31.md) | [PDF](./daily/2026-10-31.pdf) |
 | 2026-10-30 | Hormuz — Limpet Mines Disable Tanker Louise 1 Northeast of Khasab; UKMTO 186-26 Projectile Report; Iran Claims Four Mined Tankers and Two More "Halted"; CENTCOM Denies Mine Claims | [daily/2026-10-30.md](./daily/2026-10-30.md) | [PDF](./daily/2026-10-30.pdf) |
 | 2026-10-29 | Hormuz — UKMTO Reports Vessel Afire North of Khasab; IRGC Says Three Tankers Hit Mines on the "Unauthorized" Southern Route; IRGC Claims Capture of US MQM-170 Drone | [daily/2026-10-29.md](./daily/2026-10-29.md) | [PDF](./daily/2026-10-29.pdf) |
 | 2026-10-28 | Iran Strike Track — WSJ: US Warns Gulf States of a Short, Intense Campaign After the Midterms; Trump "Anything's Possible"; War Cost Passes $47 Billion | [daily/2026-10-28.md](./daily/2026-10-28.md) | [PDF](./daily/2026-10-28.pdf) |
