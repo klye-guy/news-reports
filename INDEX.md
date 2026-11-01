@@ -57,6 +57,12 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 ## Weekly
 
+### November 2026
+
+| Week ending | Subject | Markdown | PDF |
+|-------------|---------|----------|-----|
+| 2026-11-01 | Iran strike track and force posture — "96 hours" readiness; allies told to prepare for a short post-midterm campaign; Cooper briefs Trump; "ten minutes" for Pickaxe Mountain; Khamenei orders retaliation "without geographical limitations" (Significance: HIGH) | [weekly/2026-11-01.md](./weekly/2026-11-01.md) |  |
+
 ### October 2026
 
 | Week ending | Subject | Markdown | PDF |
