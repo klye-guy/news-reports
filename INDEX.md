@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-02 | Iran Diplomacy — Iranian Team Leaves Doha; Draft Proposal Circulating; Tehran Awaits US Reply on Two-Day Hormuz Plan | [daily/2026-11-02.md](./daily/2026-11-02.md) | [PDF](./daily/2026-11-02.pdf) |
 | 2026-11-01 | Iran Diplomacy — Doha Talks Enter Third Day; US and Iran Deny "Breakthrough" Report; Araghchi Offers Two-Day Hormuz Reopening on Iran's Terms | [daily/2026-11-01.md](./daily/2026-11-01.md) | [PDF](./daily/2026-11-01.pdf) |
 
 ### October 2026
@@ -61,7 +62,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Week ending | Subject | Markdown | PDF |
 |-------------|---------|----------|-----|
-| 2026-11-01 | Iran strike track and force posture — "96 hours" readiness; allies told to prepare for a short post-midterm campaign; Cooper briefs Trump; "ten minutes" for Pickaxe Mountain; Khamenei orders retaliation "without geographical limitations" (Significance: HIGH) | [weekly/2026-11-01.md](./weekly/2026-11-01.md) |  |
+| 2026-11-01 | Iran strike track and force posture — "96 hours" readiness; allies told to prepare for a short post-midterm campaign; Cooper briefs Trump; "ten minutes" for Pickaxe Mountain; Khamenei orders retaliation "without geographical limitations" (Significance: HIGH) | [weekly/2026-11-01.md](./weekly/2026-11-01.md) | [PDF](./weekly/2026-11-01.pdf) |
 
 ### October 2026
 
