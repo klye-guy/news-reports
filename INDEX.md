@@ -10,7 +10,8 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
-| 2026-11-04 | Midterms — Democrats Win Control of the House and Senate; Seven Senate Flips; Major Governor Gains | [daily/2026-11-04.md](./daily/2026-11-04.md) |  |
+| 2026-11-05 | Election Aftermath — Democrats at 240+ House and 54 Senate Seats; Alaska and Mississippi Uncalled; Johnson Steps Aside as GOP Leader; Schumer Vows "Legislative Razor Wire" | [daily/2026-11-05.md](./daily/2026-11-05.md) |  |
+| 2026-11-04 | Midterms — Democrats Win Control of the House and Senate; Seven Senate Flips; Major Governor Gains | [daily/2026-11-04.md](./daily/2026-11-04.md) | [PDF](./daily/2026-11-04.pdf) |
 | 2026-11-03 | Iran Diplomacy — Qatar Shuttles to Tehran; New Mediator Proposal Under Review; Feedback Expected Within ~36 Hours; Iran Says "Ball Is in America's Court" | [daily/2026-11-03.md](./daily/2026-11-03.md) | [PDF](./daily/2026-11-03.pdf) |
 | 2026-11-02 | Iran Diplomacy — Iranian Team Leaves Doha; Draft Proposal Circulating; Tehran Awaits US Reply on Two-Day Hormuz Plan | [daily/2026-11-02.md](./daily/2026-11-02.md) | [PDF](./daily/2026-11-02.pdf) |
 | 2026-11-01 | Iran Diplomacy — Doha Talks Enter Third Day; US and Iran Deny "Breakthrough" Report; Araghchi Offers Two-Day Hormuz Reopening on Iran's Terms | [daily/2026-11-01.md](./daily/2026-11-01.md) | [PDF](./daily/2026-11-01.pdf) |
