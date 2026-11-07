@@ -10,7 +10,8 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
-| 2026-11-06 | Election Aftermath — House Called 253–157 with 25 Uncalled; Alaska and Mississippi Still Nail-Biters; Scalise vs. Jordan Vote Set for 10 NOV; Dhillon Resigns DOJ Civil Rights Post | [daily/2026-11-06.md](./daily/2026-11-06.md) |  |
+| 2026-11-07 | White House Shakeup — Stephen Miller Named Chief of Staff, Replacing Susie Wiles; Trump Hints at "a Few" Cabinet Changes | [daily/2026-11-07.md](./daily/2026-11-07.md) |  |
+| 2026-11-06 | Election Aftermath — House Called 253–157 with 25 Uncalled; Alaska and Mississippi Still Nail-Biters; Scalise vs. Jordan Vote Set for 10 NOV; Dhillon Resigns DOJ Civil Rights Post | [daily/2026-11-06.md](./daily/2026-11-06.md) | [PDF](./daily/2026-11-06.pdf) |
 | 2026-11-05 | Election Aftermath — Democrats at 240+ House and 54 Senate Seats; Alaska and Mississippi Uncalled; Johnson Steps Aside as GOP Leader; Schumer Vows "Legislative Razor Wire" | [daily/2026-11-05.md](./daily/2026-11-05.md) | [PDF](./daily/2026-11-05.pdf) |
 | 2026-11-04 | Midterms — Democrats Win Control of the House and Senate; Seven Senate Flips; Major Governor Gains | [daily/2026-11-04.md](./daily/2026-11-04.md) | [PDF](./daily/2026-11-04.pdf) |
 | 2026-11-03 | Iran Diplomacy — Qatar Shuttles to Tehran; New Mediator Proposal Under Review; Feedback Expected Within ~36 Hours; Iran Says "Ball Is in America's Court" | [daily/2026-11-03.md](./daily/2026-11-03.md) | [PDF](./daily/2026-11-03.pdf) |
