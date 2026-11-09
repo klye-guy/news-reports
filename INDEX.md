@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-09 | White House — Miller Starts as Chief of Staff; Trump on "60 Minutes": Deportations "Might Be Too Tough," "A Few Changes" Coming; Dana White Offer "Only Kidding" | [daily/2026-11-09.md](./daily/2026-11-09.md) | [PDF](./daily/2026-11-09.pdf) |
 | 2026-11-08 | White House — GOP Backlash to Miller; Trump Offers Press Secretary Job to Dana White; Trump Orders DOJ to Probe Democrats over "Extortion" | [daily/2026-11-08.md](./daily/2026-11-08.md) | [PDF](./daily/2026-11-08.pdf) |
 | 2026-11-07 | White House Shakeup — Stephen Miller Named Chief of Staff, Replacing Susie Wiles; Trump Hints at "a Few" Cabinet Changes | [daily/2026-11-07.md](./daily/2026-11-07.md) | [PDF](./daily/2026-11-07.pdf) |
 | 2026-11-06 | Election Aftermath — House Called 253–157 with 25 Uncalled; Alaska and Mississippi Still Nail-Biters; Scalise vs. Jordan Vote Set for 10 NOV; Dhillon Resigns DOJ Civil Rights Post | [daily/2026-11-06.md](./daily/2026-11-06.md) | [PDF](./daily/2026-11-06.pdf) |
