@@ -9,6 +9,7 @@ from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 daily = sorted((root / "daily").glob("????-??-??.md"))
 weekly = sorted((root / "weekly").glob("????-??-??.md"))
+it_daily = sorted((root / "it-daily").glob("????-??-??.md"))
 current = root / "current"
 
 ITEM_TITLE = re.compile(r"(?m)^(?:##\s+)?ITEM\s+\d+:\s*(.+)$")
@@ -86,6 +87,14 @@ if weekly:
     if pdf.is_file():
         copy_bytes(pdf, current / "latest-weekly.pdf")
 
+if it_daily:
+    newest = it_daily[-1]
+    copy_bytes(newest, root / "LATEST_IT_DAILY.md")
+    copy_bytes(newest, current / "latest-it-daily.md")
+    pdf = newest.with_suffix(".pdf")
+    if pdf.is_file():
+        copy_bytes(pdf, current / "latest-it-daily.pdf")
+
 
 def group_rows(paths: list[Path], kind: str) -> list[str]:
     """Newest-first month sections with subject column."""
@@ -103,26 +112,24 @@ def group_rows(paths: list[Path], kind: str) -> list[str]:
             order.append(month)
         by_month[month].append((date, p, meta, subj))
 
+    folder = {
+        "daily": "daily",
+        "weekly": "weekly",
+        "it-daily": "it-daily",
+    }[kind]
+    date_header = "Week ending" if kind == "weekly" else "Date"
+    date_sep = "-------------" if kind == "weekly" else "------"
+
     lines: list[str] = []
     for month in order:
         lines.append(f"### {month}")
         lines.append("")
-        if kind == "daily":
-            lines.append("| Date | Subject | Markdown | PDF |")
-            lines.append("|------|---------|----------|-----|")
-            for date, p, meta, subj in by_month[month]:
-                lines.append(
-                    f"| {date} | {subj} | [daily/{p.name}](./daily/{p.name}) | {pdf_cell(p)} |"
-                )
-        else:
-            lines.append("| Week ending | Subject | Markdown | PDF |")
-            lines.append("|-------------|---------|----------|-----|")
-            for date, p, meta, subj in by_month[month]:
-                period = meta.get("period", "")
-                # keep period discoverable in subject cell footnote-style when useful
-                lines.append(
-                    f"| {date} | {subj} | [weekly/{p.name}](./weekly/{p.name}) | {pdf_cell(p)} |"
-                )
+        lines.append(f"| {date_header} | Subject | Markdown | PDF |")
+        lines.append(f"|{date_sep}|---------|----------|-----|")
+        for date, p, meta, subj in by_month[month]:
+            lines.append(
+                f"| {date} | {subj} | [{folder}/{p.name}](./{folder}/{p.name}) | {pdf_cell(p)} |"
+            )
         lines.append("")
     return lines
 
@@ -144,5 +151,19 @@ lines += [
     "",
 ]
 lines += group_rows(weekly, "weekly")
+lines += [
+    "## IT & Cybersecurity Daily",
+    "",
+]
+if it_daily:
+    lines += group_rows(it_daily, "it-daily")
+else:
+    lines += [
+        "_No IT & cybersecurity daily reports yet._",
+        "",
+    ]
 (root / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
-print(f"Updated LATEST_*, current/, and INDEX ({len(daily)} daily, {len(weekly)} weekly)")
+print(
+    f"Updated LATEST_*, current/, and INDEX "
+    f"({len(daily)} daily, {len(weekly)} weekly, {len(it_daily)} it-daily)"
+)

@@ -37,7 +37,13 @@ function Meta(meta)
   if rt == "" then
     rt = "report"
   end
-  local labels = { daily = "DAILY", weekly = "WEEKLY" }
+  local labels = {
+    daily = "DAILY",
+    weekly = "WEEKLY",
+    ["it-daily"] = "IT DAILY",
+    it_daily = "IT DAILY",
+    ["it-cyber"] = "IT DAILY",
+  }
   meta.kind_label = pandoc.MetaString(labels[rt] or rt)
   meta.report_type = pandoc.MetaString(rt)
   local prepared = meta_str(meta, "prepared_for")

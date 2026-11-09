@@ -68,7 +68,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Week ending | Subject | Markdown | PDF |
 |-------------|---------|----------|-----|
-| 2026-11-08 | Midterms — Democrats win the House and Senate; seven Senate flips; five governorships flip; Alaska and Mississippi uncalled; GOP leadership scramble; Dhillon resigns at DOJ (Significance: HIGH) | [weekly/2026-11-08.md](./weekly/2026-11-08.md) |  |
+| 2026-11-08 | Midterms — Democrats win the House and Senate; seven Senate flips; five governorships flip; Alaska and Mississippi uncalled; GOP leadership scramble; Dhillon resigns at DOJ (Significance: HIGH) | [weekly/2026-11-08.md](./weekly/2026-11-08.md) | [PDF](./weekly/2026-11-08.pdf) |
 | 2026-11-01 | Iran strike track and force posture — "96 hours" readiness; allies told to prepare for a short post-midterm campaign; Cooper briefs Trump; "ten minutes" for Pickaxe Mountain; Khamenei orders retaliation "without geographical limitations" (Significance: HIGH) | [weekly/2026-11-01.md](./weekly/2026-11-01.md) | [PDF](./weekly/2026-11-01.pdf) |
 
 ### October 2026
@@ -86,3 +86,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 |-------------|---------|----------|-----|
 | 2026-09-27 | Trump rejects Iran’s seven-day Hormuz roadmap after UNGA dual-track week (Significance: HIGH) | [weekly/2026-09-27.md](./weekly/2026-09-27.md) | [PDF](./weekly/2026-09-27.pdf) |
 | 2026-09-20 | Iran peace conditions, Hormuz closure, and US decision space (Significance: HIGH) | [weekly/2026-09-20.md](./weekly/2026-09-20.md) |  |
+
+## IT & Cybersecurity Daily
+
+_No IT & cybersecurity daily reports yet._
