@@ -90,4 +90,8 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 ## IT & Cybersecurity Daily
 
-_No IT & cybersecurity daily reports yet._
+### November 2026
+
+| Date | Subject | Markdown | PDF |
+|------|---------|----------|-----|
+| 2026-11-09 | Nvidia — Board Opens Independent Probe of CEO Jensen Huang over Alleged Chinese Intelligence Targeting; Shares Down ~5% Premarket | [it-daily/2026-11-09.md](./it-daily/2026-11-09.md) | [PDF](./it-daily/2026-11-09.pdf) |
