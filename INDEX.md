@@ -10,7 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
-| 2026-11-10 | Iran Diplomacy — Trump After Qatar PM Meeting: War "Militarily Effectively Over," Blockade Stays; Rezaei: "Imaginary Talks"; Araghchi Denies Vance–Rezaei Meeting | [daily/2026-11-10.md](./daily/2026-11-10.md) |  |
+| 2026-11-10 | Iran Diplomacy — Trump After Qatar PM Meeting: War "Militarily Effectively Over," Blockade Stays; Rezaei: "Imaginary Talks"; Araghchi Denies Vance–Rezaei Meeting | [daily/2026-11-10.md](./daily/2026-11-10.md) | [PDF](./daily/2026-11-10.pdf) |
 | 2026-11-09 | White House — Miller Starts as Chief of Staff; Trump on "60 Minutes": Deportations "Might Be Too Tough," "A Few Changes" Coming; Dana White Offer "Only Kidding" | [daily/2026-11-09.md](./daily/2026-11-09.md) | [PDF](./daily/2026-11-09.pdf) |
 | 2026-11-08 | White House — GOP Backlash to Miller; Trump Offers Press Secretary Job to Dana White; Trump Orders DOJ to Probe Democrats over "Extortion" | [daily/2026-11-08.md](./daily/2026-11-08.md) | [PDF](./daily/2026-11-08.pdf) |
 | 2026-11-07 | White House Shakeup — Stephen Miller Named Chief of Staff, Replacing Susie Wiles; Trump Hints at "a Few" Cabinet Changes | [daily/2026-11-07.md](./daily/2026-11-07.md) | [PDF](./daily/2026-11-07.pdf) |
@@ -95,4 +95,5 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-10 | Nvidia — Trump Says FBI Is Looking at Huang Affair; Shareholder Class Action Filed; Shares Closed Down More Than 4% | [it-daily/2026-11-10.md](./it-daily/2026-11-10.md) | [PDF](./it-daily/2026-11-10.pdf) |
 | 2026-11-09 | Nvidia — Board Opens Independent Probe of CEO Jensen Huang over Alleged Chinese Intelligence Targeting; Shares Down ~5% Premarket | [it-daily/2026-11-09.md](./it-daily/2026-11-09.md) | [PDF](./it-daily/2026-11-09.pdf) |
