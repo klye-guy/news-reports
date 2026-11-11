@@ -1,237 +1,206 @@
 ---
-title: "Daily IT and Cybersecurity Intelligence Summary — 2026-11-10"
+title: "Daily IT and Cybersecurity Intelligence Summary — 2026-11-11"
 type: it-daily
-date: 2026-11-10
-dtg: "100800 CST NOV 26"
-period: "2026-11-09 ~0740 CST to 2026-11-10 ~0800 CST"
+date: 2026-11-11
+dtg: "110745 CST NOV 26"
+period: "2026-11-10 ~0800 CST to 2026-11-11 ~0745 CST"
 classification: "UNCLASSIFIED // FOR INFORMATIONAL USE"
-tags: [it-daily, cybersecurity, sysadmin, N-able, N-central, Able2Shell, RMM, MSP, CISA-KEV, BOD-26-04, OpenSSH, SSHole, CVE-2026-123158, Alpine, musl, GPUStack, CVE-2026-102895, FreeSWITCH, SignalWire, CVE-2026-116779, IBM, Aspera-Faspex, CVE-2026-123218, SonicWall, CVE-2026-19868, WordPress, WP-Duplicate, CVE-2026-123751, Microsoft, Patch-Tuesday, MSRC, Entra, CVE-2026-109469, .NET-8, .NET-9, Windows-11-23H2, Azure, SAP, ICM2SHELL, PROXYGATE, CVE-2026-76964, CVE-2026-89126, CVE-2026-89103, CVE-2026-120017, Google, Chrome, CVE-2026-125350, Mozilla, Firefox-160, MFSA-2026-125, Ubuntu, CVE-2026-98432, APT, CVE-2026-109518, Nvidia, Jensen-Huang, MegaSpeed, FBI, Anthropic, Claude-Fable-5.2, Claude-Mythos-5.2, TPU-8tx, IRGC, Shahid-Kaveh, CyberAv3ngers, ANSSI, Vanderbilt, BYOD-ransomware, Mittwald, MCP, SEGA, ARARA, NoName057(16), Football-Manager-27, Denuvo, ARTIFACT, Destruction-AllStars, delisting, Growtopia, Nintendo, DMCA, Citron-NEO, Eden, Switch-2, Dolphin, PCSX2, Xenia, shadPS4]
+tags: [it-daily, cybersecurity, sysadmin, Microsoft, Patch-Tuesday, MSRC, Outlook, CVE-2026-124194, NTLM, Windows-Search, CVE-2026-116928, LDAP, CVE-2026-119958, Schannel, CVE-2026-119952, Exchange, CVE-2026-118207, Xbox-Live, CVE-2026-112967, KB5132061, Windows-11-26H2, Windows-11-23H2, Edge, Adobe, Adobe-Connect, APSB26-191, Adobe-Experience-Manager, APSB26-189, CISA-KEV, BOD-26-04, Barracuda, ESG, CVE-2026-116606, CVE-2026-111560, Mandiant, Cisco, BroadWorks, CVE-2026-20320, Operation-Snowball, DeepSeek, Openwave, CVE-2026-111793, Google, Chrome, CVE-2026-125350, N-able, N-central, Able2Shell, CVE-2026-125883, CVE-2026-125881, CVE-2026-125878, CVE-2026-125879, CVE-2026-125882, CVE-2026-125880, CVE-2026-91000, OpenSSH, SSHole, CVE-2026-123158, SonicWall, CVE-2026-19868, WP-Duplicate, CVE-2026-123751, Nvidia, Jensen-Huang, Wachtell, OpenAI, Businesses-in-ChatGPT, Meta, Muse, Amazon, Ring, Turla, Cereal, ESET, Fireworks-AI, Notion, LLMJacking, Vanderbilt, BYOD-ransomware, Texas-HHS, Nintendo, DMCA, Picofly, HWFLY, SX-Core, Citron-NEO, yuzu, WeLib, Denuvo, ARTIFACT, Football-Manager-27, Destruction-AllStars, Eden, Eglantine, Lichii, RPCS3]
 ---
 
 UNCLASSIFIED // FOR INFORMATIONAL USE  
 
 DAILY IT AND CYBERSECURITY INTELLIGENCE SUMMARY  
-DTG: 100800 CST NOV 26 (America/Chicago)  
-PERIOD COVERED: ~0740 hours CST 09 NOV 26 through ~0800 hours CST 10 NOV 26 (CT)  
+DTG: 110745 CST NOV 26 (America/Chicago)  
+PERIOD COVERED: ~0800 hours CST 10 NOV 26 through ~0745 hours CST 11 NOV 26 (CT)  
 PREPARED FOR: Kyle Sibley  
 CLASSIFICATION: UNCLASSIFIED // FOR INFORMATIONAL USE  
 
 ## EXECUTIVE SUMMARY
 
-The biggest new admin problem is N-able N-central. A researcher published 33 alleged zero-days with working exploit code ("Able2Shell") late on 08 NOV. N-able took hosted N-central offline worldwide on 09 NOV and told on-premises customers to shut their servers down. There is no fix yet; N-able's hotfix ETA is midday Eastern today (about 1100 CST). watchTowr, Lupovis and Previdian have already seen exploit attempts against honeypots. CISA added four exploited bugs to KEV on 09 NOV with an unusually short 12 NOV federal deadline: OpenSSH "SSHole" (CVE-2026-123158, now confirmed exploited, with attackers stealing keys and planting persistence), GPUStack, FreeSWITCH and IBM Aspera Faspex. Google patched a Chrome zero-day (CVE-2026-125350) in 157.0.8103.50/.51. SAP shipped four CVSS 10.0 fixes this morning. Microsoft Patch Tuesday is not out yet; it is due at 1200 CST, and .NET 8 and .NET 9 reach end of support today. In big tech, Trump said the FBI is looking into Jensen Huang's relationship with an alleged Chinese agent, a shareholder sued Nvidia, and the stock closed down more than 4% on Monday. Anthropic released Claude Fable 5.2 and Mythos 5.2. France blamed Iran's IRGC for refrigeration sabotage at about 700 stores; Vanderbilt is dealing with a BYOD ransomware attack; SEGA leaked 2.2 million newsletter email addresses through a vendor. On the gaming side, Football Manager 27 launches today with a Denuvo bypass already out, and Nintendo's DMCA notice removed the Citron NEO Switch emulator and 70 forks from GitHub. Eden and the Switch 2 forks were not named.
+Microsoft's November Patch Tuesday landed at 1200 CST with roughly 1,090 to 1,260 CVEs, depending on who is counting, and one exploited zero-day: an Outlook flaw (CVE-2026-124194) that leaks NTLMv2 hashes when a user opens a crafted message file. It is fixed through Office updates, not Windows Update, and CISA put it in KEV with a 24 NOV deadline. The admin priorities beyond that are a zero-click Windows Search bug reachable through Exchange (CVE-2026-116928, CVSS 9.8), Windows LDAP RCE (CVE-2026-119958, 9.8) and Schannel RCE (CVE-2026-119952). CISA added six entries to KEV on 10 NOV: the Outlook bug, Chrome CVE-2026-125350, a Barracuda ESG chain that can reach root (due 13 NOV, exploitation confirmed by Barracuda), Cisco BroadWorks CVE-2026-20320 (used in an AI-driven intrusion on a European telecom), and Openwave Webtop. N-able shipped N-central 2026.4 Hotfix 2 (build 2026.4.1.26) with seven CVEs, hosted servers are back up, and on-prem servers should stay offline until upgraded. Agents and probes must also be upgraded, agents first. Adobe fixed 110 CVEs, including six CVSS 10.0 bugs in Adobe Connect. In big tech, Nvidia's board hired Wachtell to investigate Jensen Huang; the stock fell 5.47% Tuesday and was up about 5% premarket today. ESET exposed a Turla toolkit hiding inside Exchange servers. On the gaming side, Nintendo's DMCA notices widened to Switch modchip firmware: GitHub disabled a network of 144 Picofly repositories, a first for Nintendo.
 
 ## BIG TECH
 
-## ITEM 1: Nvidia — Trump Says FBI Is Looking at Huang Affair; Shareholder Class Action Filed; Shares Closed Down More Than 4%
+## ITEM 1: Nvidia — Board Hires Wachtell to Investigate Huang; Shares Fell 5.47% Tuesday, Rebounding Premarket; Congressional Briefing Request
 
-- WHAT / WHERE / WHEN: At a White House briefing Monday, 09 NOV, Trump said of CEO Jensen Huang's affair with Alice Huang, a former executive at Singapore-based Megaspeed who US intelligence reportedly says works for China's Ministry of State Security: "I know the FBI is looking into it in terms of something else, and I think that he'll be in good shape." Trump said Huang told him, "I had no idea that she was a spy." Nvidia shares closed down more than 4% Monday (Reuters). Shareholder Mark Kistenmacher filed a proposed class action in federal court in San Jose against Nvidia and Huang, alleging investors were misled about the relationship and about Nvidia's ties to Megaspeed (AP, Reuters, Courthouse News, Politico, 09 NOV). Nvidia's board says it has "no reason to believe that either national security or NVIDIA secrets were compromised"; a spokesperson told NBC that Huang will lead "without interruption." China's Foreign Ministry called the allegation "a smear." Reuters reported lawmakers now see tighter AI-chip export legislation as more likely.
-- IMPACT ASSESSMENT: The story is now a legal and policy matter, not just a board review: a federal inquiry, securities litigation, and possible new chip-export rules. There is still no product, driver or supply impact. Q3 earnings are scheduled for 17 NOV, per earlier CNBC reporting.
+- WHAT / WHERE / WHEN: On Tuesday, 10 NOV, Nvidia said it had hired Wachtell, Lipton, Rosen & Katz, with partner and former acting SDNY US attorney Joon Kim leading, for a "thorough and independent" investigation into whether company secrets or national security were compromised through CEO Jensen Huang's relationship with Alice Huang, an alleged Chinese intelligence asset and Nvidia customer. Nvidia gave no timeframe and says Huang will lead "without interruption"; CNBC reports he was in the office Monday and Tuesday. Shares closed down 5.47% Tuesday after a 4.3% drop Monday, and were up 5.3% premarket at 0447 CST Wednesday (CNBC). The Guardian says the scandal has erased about $430 billion of market value. Morgan Stanley removed Nvidia from its top-pick list today. Tom's Hardware reports House members asked for a joint closed-door briefing on Nvidia's anti-espionage security protocols and could subpoena Huang if he does not respond by today. Earnings are 17 NOV.
+- IMPACT ASSESSMENT: Still no product, driver or supply impact. The risk to watch is policy: lawmakers tying this to tighter AI-chip export rules, which could affect GPU pricing and availability over time.
 - ACTION FOR ADMINS: None.
-- SOURCE SYNOPSIS: Al Jazeera and AP (10 NOV, read directly); Reuters via Hindustan Times; NBC News (updated 09 NOV); lawsuit details from AP, Reuters/Investing.com, Courthouse News and Law360 search excerpts. The complaint itself was not read.
-- FRAMING (TRADE/MAINSTREAM): AP framed it as having "rocked the political class and America's tech sector"; Reuters focused on Huang's future and export-control fallout.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Hacker News stories on the lawsuit, a short seller who flagged the Megaspeed ties six months ago, and Trump–Huang ties each drew single-digit points and few comments. Reddit was not checked.
-- CONFIDENCE: HIGH on Trump's remarks, the share move and the lawsuit filing. LOW on the espionage allegation (anonymous intelligence sourcing; China denies; Alice Huang has not commented).
+- SOURCE SYNOPSIS: The Guardian (11 NOV, read directly); CNBC (11 NOV, read directly); Tom's Hardware (headline and search summary only; the subpoena deadline is not independently confirmed).
+- FRAMING (TRADE/MAINSTREAM): CNBC framed it as investors weighing "spillover effects" before earnings; analyst Dan Ives put Huang's odds of removal at about 15%, while Yale's Jeffrey Sonnenfeld called it "about 50-50."
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Hacker News posts on the board statement and on a report that Alice Huang helped secure over $7.5 billion of Nvidia imports drew about 8 to 10 points and almost no comments. Reddit was not checked.
+- CONFIDENCE: HIGH on the law-firm hire and share moves. MODERATE on the congressional deadline (single outlet). LOW on the underlying espionage allegation (anonymous sourcing; China denies).
 
-## ITEM 2: Anthropic — Claude Fable 5.2 and Mythos 5.2 Released; Mythos Limited to Vetted Organizations
+## ITEM 2: Big Tech Briefs — OpenAI "Businesses in ChatGPT," Meta Muse on Watches, Amazon Ring Security Robots
 
-- WHAT / WHERE / WHEN: Anthropic announced Claude Fable 5.2 and Claude Mythos 5.2 on 09 NOV (about 1300 CST). Anthropic says they are the same underlying model: Fable has cybersecurity and biology safeguards and is available to all users, while Mythos is open only to vetted organizations through Anthropic's Cyber and Life Sciences Verification Programs. Pricing is $8 per million input tokens and $40 per million output tokens, with an optional fast mode at $16/$80. Fable 5.2 is available on the Claude Platform (`claude-fable-5-2`), Amazon Web Services, Google Cloud and Microsoft Azure; Microsoft announced it in Foundry the same day. Anthropic says Mythos 5.2 found 10.2% more vulnerabilities than Opus 5.5 on its internal CVE Rediscovery evaluation, that Fable 5.2 produced about 55% fewer unnecessary safety blocks than Fable 5.1, and that Fable falls back to Opus 4.8 on blocked cybersecurity queries.
-- IMPACT ASSESSMENT: For admins, the practical change is that AI-driven bug finding keeps speeding up. That is the same dynamic OpenSSH's Damien Miller cited when he rushed the SSHole release, and it means shorter windows between disclosure and exploitation. Enterprise tenants may see the new model appear in Azure Foundry, Bedrock and Vertex model catalogs.
-- ACTION FOR ADMINS: If you govern AI model access in Azure, AWS or GCP, review allow-lists for the new model IDs. No security action is needed.
-- SOURCE SYNOPSIS: Anthropic announcement (09 NOV, read directly); The Verge (09 NOV, read directly); Microsoft Tech Community Foundry post (search title).
-- FRAMING (TRADE/MAINSTREAM): The Verge led with the claims that the models solved open physics problems and formalized Fermat's Last Theorem.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): The main HN thread had about 700 points and 864 comments. Top comments mocked the naming (5.2 above Opus 5.5), complained about cost ("Too expensive for me"), and accused Anthropic of degrading Opus 5.5 ("lobotomized"). One noted the model appeared immediately in Claude Code.
-- CONFIDENCE: HIGH on the release, pricing and availability. Benchmark and capability claims are vendor-reported.
-
-## ITEM 3: Big Tech Briefs — Google Adds Two TPU 8 Variants; Microsoft Launches "Frontier Accelerate" Bundle
-
-- WHAT / WHERE / WHEN: Google announced two more eighth-generation TPUs on 09 NOV: TPU 8tx for confidential computing for government and regulated businesses, and 8i Max for AI applications with large context windows. That makes four new TPUs this year, after the 8t and 8i in April (The Verge, 09 NOV). Microsoft announced "Frontier Accelerate," a cross-service package of expertise, savings, investments and training across Azure, databases, Copilot, security and Marketplace (Microsoft Cloud Blog, 09 NOV).
-- IMPACT ASSESSMENT: Low operational impact. Confidential-compute TPUs matter mainly to government and regulated GCP tenants.
-- ACTION FOR ADMINS: None.
-- SOURCE SYNOPSIS: The Verge (09 NOV, read directly); Microsoft Cloud Blog (search title and excerpt).
+- WHAT / WHERE / WHEN: On 10 NOV, OpenAI announced "Businesses in ChatGPT," which lets companies claim profiles and run customer-facing agents inside ChatGPT. Meta brought its Muse AI agent to Apple Watch and Wear OS (TechCrunch). Amazon's Ring announced "Ring Robotics," including an indoor drone camera and a patrol robot for businesses (About Amazon).
+- IMPACT ASSESSMENT: Low operational impact. Ring's autonomous cameras and drones raise the usual privacy and network-segmentation questions for anyone putting them on a home or office network.
+- ACTION FOR ADMINS: None. Treat new camera robots as IoT and keep them on an isolated VLAN.
+- SOURCE SYNOPSIS: OpenAI, TechCrunch and About Amazon pages (search titles and summaries only; not opened).
 - FRAMING (TRADE/MAINSTREAM): Routine product coverage.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
-- CONFIDENCE: HIGH (Google); MODERATE (Microsoft; read from a search excerpt only).
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): The HN thread on Businesses in ChatGPT had 37 points and 10 comments.
+- CONFIDENCE: MODERATE (search summaries only).
 
 ## SYSADMIN
 
-## ITEM 4: Microsoft Patch Tuesday Not Yet Released (Due 1200 CST); .NET 8 and .NET 9 End of Support Today
+## ITEM 3: Microsoft November Patch Tuesday — About 1,090+ CVEs, One Exploited Outlook Zero-Day; Zero-Click Windows Search via Exchange, LDAP and Schannel RCEs Lead the List
 
-- WHAT / WHERE / WHEN: As of about 0740 CST on 10 NOV, Microsoft's November security release had not been published. The MSRC November update guide (first posted 04 NOV, last updated 10 NOV at 0101 UTC) had 108 entries. All were early-posted entries for cloud services, Chromium/Edge, Linux kernel and open-source components (including OpenSSH CVE-2026-123158). None yet covered Windows or Office. One is rated Critical: Entra Device Registration elevation of privilege CVE-2026-109469 (CVSS 10.0, authorization bypass through a user-controlled key). MSRC says Microsoft has "already fully mitigated" it and that no customer action is required. The scheduled release time is 10:00 a.m. Pacific (1200 CST). Also today: .NET 8 and .NET 9 reach end of support (Microsoft .NET support policy), so .NET 10 LTS (supported to November 2028) is the upgrade target. A Danish admin blog notes that today is also the final security update for Windows 11 23H2 Enterprise and Education, and that the November CU will include October's out-of-band fixes, the removal of seven compromised root certificates (26 OCT), and gradual default enablement of Memory Integrity (HVCI) on eligible PCs.
-- IMPACT ASSESSMENT: Any zero-days will be known only after 1200 CST. HVCI defaulting on can break old drivers and slow some systems, which matters for older hardware and gaming rigs. Unsupported .NET 8/9 runtimes on servers will stop getting security fixes after today's patches.
-- ACTION FOR ADMINS: Hold the maintenance window for 10–12 NOV and check MSRC and CISA KEV after 1200 CST for exploited CVEs. Inventory .NET 8/9 runtimes (`dotnet --list-runtimes`) and plan .NET 10 migrations. Move Windows 11 23H2 Enterprise/Education PCs to 25H2 or 26H2. Test HVCI with legacy drivers on a pilot ring.
-- SOURCE SYNOPSIS: MSRC CVRF API (read directly at ~0738 CST); Microsoft .NET support policy (search excerpt); J-Cave.dk admin blog (search excerpt); Help Net Security forecast (06 NOV). An AI-generated "predicted" article claiming an exploited Windows zero-day was found and discarded as fabricated.
-- FRAMING (TRADE/MAINSTREAM): Help Net Security expected another very large CVE count after October's record 1,407 unique CVEs.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): The r/sysadmin megathread opens with the release and was not checked.
-- CONFIDENCE: HIGH that the release is pending and on .NET end of support. MODERATE on the 23H2 and HVCI details (secondary blog).
+- WHAT / WHERE / WHEN: Microsoft released its November updates on 10 NOV at 1200 CST. Counts differ by method: ZDI says about 1,090 new CVEs, SecurityWeek 1,094, BleepingComputer 1,235 and The Hacker News 1,259; the MSRC CVRF feed shows 1,096 entries first published 10 NOV. That is the second straight month above 1,000, after October's record. BleepingComputer counts 66 Critical and CSO Online 63. The only exploited bug is CVE-2026-124194, an Outlook spoofing flaw (Moderate, CVSS 6.5). Opening a crafted message file makes Outlook contact an attacker-controlled location without the external-content warning, which discloses the user's NTLMv2 hash. The Preview Pane is not an attack vector. Affected products are Microsoft 365 Apps for Enterprise and Office LTSC 2021 and 2024; tbreak lists fixed builds 16.0.17932.21140 (LTSC 2024) and 16.0.14334.21048 (LTSC 2021). Microsoft credits "nono" and Benoît Sevens, whose credit mentions Anthropic's Claude. Other priorities, per ZDI and MSRC: CVE-2026-116928, Windows Search RCE (CVSS 9.8), which ZDI says is reachable through Exchange when the server automatically indexes a malicious attachment, so nobody has to open anything; CVE-2026-119958, Windows LDAP RCE (9.8, unauthenticated, serious on domain controllers); CVE-2026-119952, Windows Schannel RCE (8.1, "Exploitation More Likely"); CVE-2026-118207, Exchange RCE (8.8, authenticated); and CVE-2026-118146, AD DS RCE (8.8). ZDI counts 30 CVEs it considers wormable, including five in Message Queuing, four in DNS, two in DHCP Server, and two in Xbox, among them CVE-2026-112967, a CVSS 9.8 Xbox Live Networking Service RCE. The Windows 11 cumulative update is KB5132061 (builds 26300.9974, 26200.9974 and 26100.9974). This is the final monthly update for Windows 11 23H2 Enterprise and Education.
+- IMPACT ASSESSMENT: The Outlook zero-day is a classic phishing credential-theft vector, and any environment that still allows outbound NTLM to the internet is exposed. The Windows Search/Exchange and LDAP bugs are the most dangerous unexploited items, because the network attack paths need no user action. Microsoft says publicly disclosed: none.
+- ACTION FOR ADMINS: Push the Office/Microsoft 365 Apps update now; it comes through Office Click-to-Run channels or WSUS/Intune Office policies, not the Windows CU. Block outbound SMB (TCP 445) and NTLM to the internet and consider adding high-value users to Protected Users. Patch Exchange servers and domain controllers first (Windows Search, LDAP, Schannel, AD DS), then DNS, DHCP and MSMQ hosts. Move any remaining Windows 11 23H2 Enterprise/Education PCs to a supported release.
+- SOURCE SYNOPSIS: MSRC CVRF API (read directly, ~0730 CST 11 NOV); ZDI November review (read directly); SecurityWeek, BleepingComputer, The Hacker News, tbreak, Five Nines and JPCERT (search excerpts); Microsoft KB5132061 page (search title).
+- FRAMING (TRADE/MAINSTREAM): ZDI's Dustin Childs: "At this point, does the exact number actually matter?" He argued that fewer zero-days does not mean less exploitation, because AI is better at reversing patches than finding bugs in closed-source code. ZDI and BleepingComputer both warned not to let the 6.5 score downplay the Outlook bug.
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): An HN post titled "Microsoft's Patch Tuesday surpasses 1k bugs for second month in a row" got almost no traction. The r/sysadmin megathread was not read (see Gaps).
+- CONFIDENCE: HIGH on the zero-day, the CVE details and the KB numbers. Total counts vary by method, as noted.
 
-## ITEM 5: SAP November Patch Day — Four CVSS 10.0 Flaws, Including Pre-Auth RCE in ICM and Web Dispatcher ("ICM2SHELL")
+## ITEM 4: Patch Fallout — KB5132061 Install Failures Reported; Edge 157 Picks Up the Chrome Zero-Day Fix
 
-- WHAT / WHERE / WHEN: SAP's 10 NOV Security Patch Day fixed four unauthenticated CVSS 10.0 flaws. CVE-2026-76964 (ICM, Note 3778530) and CVE-2026-89126 (Web Dispatcher, Note 3778556) share one WebSocket reassembly bug that Onapsis calls ICM2SHELL; it allows pre-authentication memory corruption and code execution as `<sid>adm`. CVE-2026-89103 (SAP Gateway, Note 3798345, "PROXYGATE") lets an outsider impersonate an internal application server. CVE-2026-120017 (SAML2 service provider, Note 3849308) skipped signature checks on assertions in some configurations, allowing login as any user. The researchers say none has been seen exploited. Out-of-maintenance kernels are also affected and may not get fixes. On 7.93, patch level 419 is still vulnerable; you need the updated 401 stack kernel, 402, or 420 or later. For PROXYGATE, the kernel patch alone is not enough: you also need a restrictive `prxyinfo` or `gw/acl_mode_proxy = 1`.
-- IMPACT ASSESSMENT: Critical for any shop running SAP, especially an internet-facing Web Dispatcher, and Fiori or Web GUI behind SAML SSO. Exploits were demonstrated privately to SAP, so expect public exploit work soon.
-- ACTION FOR ADMINS: Patch the kernel and every Web Dispatcher in one rollout. Until then, disable WebSocket support as a stopgap (it breaks ABAP Push Channels and some Fiori features), lock down `prxyinfo`, set `gw/acl_mode_proxy = 1`, restrict gateway ports 33NN/48NN, and review SAML2 trusted IdPs and privileged SAML logons.
-- SOURCE SYNOPSIS: The Hacker News (10 NOV, read directly, citing SAP's bulletin, Onapsis and RedRays); SAP Patch Day page, Onapsis advisories and BleepingComputer (search titles and excerpts; SAP notes require login).
-- FRAMING (TRADE/MAINSTREAM): BleepingComputer headline: "SAP patches ICM2SHELL and PROXYGATE maximum severity flaws."
+- WHAT / WHERE / WHEN: Neowin reports users seeing KB5132061 install failures with errors 0x800f0993 and 0x800f0989, and one user found that turning off the Windows Sandbox feature, restarting and retrying let it install. Microsoft lists no known issues for the update. Its KB page says KB5124010 or later and servicing stack 26100.9539 or later must be installed first. Microsoft Edge 157.0.4341.46, released 10 NOV, carries the fix for Chrome zero-day CVE-2026-125350.
+- IMPACT ASSESSMENT: Expect a small number of failed installs on machines with Windows Sandbox enabled, which is common on admin and developer workstations. With Edge patched, every major Chromium browser now has a fix.
+- ACTION FOR ADMINS: Watch WSUS/Intune compliance for 0x800f0993 and 0x800f0989. Test the Sandbox workaround on a pilot machine before using it broadly. Confirm Edge is at 157.0.4341.46 or later and Chrome is at 157.0.8103.50 or later.
+- SOURCE SYNOPSIS: Neowin and Microsoft KB page (search excerpts); Edge version from a 2-Spyware summary and Microsoft Learn's Edge security release notes listing (search only; the Microsoft page was not opened).
+- FRAMING (TRADE/MAINSTREAM): Neowin: "a Microsoft feature may be culprit."
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
+- CONFIDENCE: MODERATE (user reports; Edge build number from a secondary source).
+
+## ITEM 5: Adobe November Patch Day — 110 CVEs; Six CVSS 10.0 Flaws in Adobe Connect, Four 9.9s in Experience Manager
+
+- WHAT / WHERE / WHEN: Adobe released nine bulletins on 10 NOV fixing 110 CVEs. The Priority 2 bulletins are APSB26-191 for Adobe Connect (24 CVEs, 18 Critical, top CVSS 10.0; Connect 12.12 and earlier on Windows; fixed in 12.12.a, 12.11.i, 12.10.f, 12.9.a and 12.8.a) and APSB26-189 for Experience Manager (14 CVEs, including four CVSS 9.9 code-execution bugs, such as CVE-2026-114371; fixed in AEM Cloud Service 2026.10.29251 and the GRANITE-75052 cumulative hotfix for 6.5 and 6.5 LTS). ZDI says each Connect 10.0 bug is reachable over the network with no authentication or user interaction. After Effects, Audition, Dimension, Photoshop, Premiere, Media Encoder and the Content Credentials SDK got Priority 3 fixes. Adobe says none is exploited.
+- IMPACT ASSESSMENT: Connect is the urgent one for anyone self-hosting it. Creative Cloud desktop apps are routine updates.
+- ACTION FOR ADMINS: Patch on-prem Adobe Connect and AEM 6.5 servers this week. Let Creative Cloud update desktop apps.
+- SOURCE SYNOPSIS: ZDI review (read directly); Adobe APSB26-191 and APSB26-189 bulletins, SecurityWeek and OpenAdvisories (search excerpts).
+- FRAMING (TRADE/MAINSTREAM): SecurityWeek: "Adobe Patches 110 Vulnerabilities Across 9 Products."
 - FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
 - CONFIDENCE: HIGH.
-
-## ITEM 6: Browsers — Chrome Zero-Day CVE-2026-125350 Fixed in 157.0.8103.50/.51; Firefox 160 and ESR 153.7/115.45 Fix 99 CVEs
-
-- WHAT / WHERE / WHEN: Google's 09 NOV Stable update to 157.0.8103.50/.51 (Windows/Mac) and 157.0.8103.50 (Linux) has nine security fixes, including High-severity CVE-2026-125350, a use-after-free in XML reported anonymously on 06 NOV. Google says it "is aware that an exploit for CVE-2026-125350 exists in the wild." Extended Stable 156.0.8078.96 carries the same fix. Chrome 157 for Android (157.0.8103.50) shipped the same day. Mozilla released Firefox 160 (MFSA 2026-125, announced 10 NOV) with 99 CVE IDs: 58 high, 24 moderate and 18 low, none marked exploited. It also released Firefox ESR 153.7 (MFSA 2026-127) and ESR 115.45 (MFSA 2026-126). Several Firefox bugs are sandbox escapes; one was reported by OpenAI researcher Amy Burnett.
-- IMPACT ASSESSMENT: The Chrome zero-day affects every Chromium-based browser until vendors ship the fix. Edge and the other Chromium browsers will follow. As of the 09 NOV KEV update, CISA had not added it.
-- ACTION FOR ADMINS: Force a Chrome relaunch to 157.0.8103.50 or later through policy, and watch for Edge, Brave and Opera builds that include CVE-2026-125350. Deploy Firefox 160 or ESR 153.7.
-- SOURCE SYNOPSIS: Chrome Releases blog (read directly); Mozilla security advisories index and MFSA 2026-125 (read directly).
-- FRAMING (TRADE/MAINSTREAM): Not yet widely covered at cutoff.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
-- CONFIDENCE: HIGH.
-
-## ITEM 7: Linux and Cloud — Ubuntu LTS Kernels Still Unfixed for CVE-2026-98432; Azure North Europe Power Loss on 09 NOV
-
-- WHAT / WHERE / WHEN: Ubuntu's tracker for CVE-2026-98432, a use-after-free in IPv4 TCP SYN-recv option handling that Ubuntu says "can lead to remote code execution," still lists 26.04, 24.04, 22.04 and 20.04 LTS (and older ESM releases) as "Vulnerable, work in progress." Only 26.10 is fixed (7.3.0-10.10). The APT fix for CVE-2026-109518 from 04 NOV stands; Ubuntu's tracker confirms the trigger needs a non-zero `Acquire::Retries`, which defaults to 3 from Debian 12 and Ubuntu 22.04. Separately, CloudAMQP relayed an Azure service issue: starting at 0917 UTC (0317 CST) on 09 NOV, multiple network devices in Azure North Europe lost power, leaving some servers unreachable. CloudAMQP marked it resolved at 1256 UTC (0656 CST).
-- IMPACT ASSESSMENT: The kernel bug remains the larger open exposure for Ubuntu servers. The Azure event is mostly outside the window but matters for anyone running single-zone workloads in North Europe.
-- ACTION FOR ADMINS: Keep vendor mitigations for CVE-2026-98432 in place and watch for Ubuntu USNs. If you ran workloads in Azure North Europe, check Service Health for the Azure post-incident review.
-- SOURCE SYNOPSIS: Ubuntu CVE tracker pages for CVE-2026-98432 and CVE-2026-109518 (read directly 10 NOV); CloudAMQP status via OutageDB (read directly). The Azure status page itself was not read.
-- FRAMING (TRADE/MAINSTREAM): No trade coverage found for either.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
-- CONFIDENCE: HIGH (Ubuntu); MODERATE (Azure, relayed through a third-party status page).
 
 ## CYBERSECURITY
 
-## ITEM 8: N-able N-central "Able2Shell" — 33 Alleged Zero-Days Dropped with Exploit Code; Hosted N-central Offline, On-Prem Told to Shut Down; Honeypot Attacks Begun
+## ITEM 6: N-able Ships N-central 2026.4 Hotfix 2 (Seven CVEs); Hosted Back Online; On-Prem Should Stay Offline Until Upgraded; Agents and Probes Must Also Update
 
-- WHAT / WHERE / WHEN: Researcher Sean Bales published 33 alleged N-central vulnerabilities late Sunday, 08 NOV, as four exploit chains with proof-of-concept code in a GitHub repository called Able2Shell. He tested them on N-central Appliance 2026.4.0.31 and believes earlier versions are also affected. The most serious chain abuses an unauthenticated XXE in service import to steal a trusted local session, reset a password and run commands as the `nable` user; it can also create an enabled "Default Administrator" account. Other chains include stored XSS to root and local privilege escalation to root. Bales told BleepingComputer he skipped vendor notice because N-able allegedly failed to fix bugs he had reported earlier in another product. N-able opened an incident at 1515 UTC (0915 CST) on 09 NOV, took Hosted N-central offline in the Americas, Europe and APAC, and "strongly advises" on-prem customers to take servers offline "until further notice." Ecoverse services under N-able Login stay up. N-able has said it has seen no exploitation or unauthorized data access. Its 0500 UTC 10 NOV update (2300 CST 09 NOV) put the hotfix ETA at "mid-day" Eastern today. watchTowr said on X that it saw exploitation attempts against N-central honeypots overnight. Lupovis and Previdian reported PoC-aligned SOAP probes against the XXE surface starting around 2200 UTC (1600 CST) on 09 NOV. No CVE IDs have been assigned. Huntress notes that N-able hotfixes that need no reboot may not change the version string.
-- IMPACT ASSESSMENT: This is the top priority for any MSP, and for any business whose MSP uses N-central. A compromised RMM server can push commands to every managed endpoint, a pattern ransomware crews have used before. Hosted customers have lost their RMM console for more than a day.
-- ACTION FOR ADMINS: Keep on-prem N-central offline, or at minimum block it from the internet, until N-able publishes the hotfix and restore guidance. Review N-central login and audit logs from 08 NOV onward for new admin accounts (especially "Default Administrator"), password resets and unexpected scripts pushed to endpoints. If your MSP uses N-central, ask them now about exposure and their plan. Verify the hotfix by N-able's guidance, not the version number.
-- SOURCE SYNOPSIS: BleepingComputer and The Hacker News (09–10 NOV, search excerpts with N-able statements); Beazley Security advisory BSL-A1242 (updated 10 NOV); Rescana and Brandefense summaries citing the N-able status page and Huntress; X posts by watchTowr (via THN), Lupovis and Previdian (read directly). The N-able status page was not read directly (fetch failed).
-- FRAMING (TRADE/MAINSTREAM): BleepingComputer noted that N-able "confirmed it is developing a hotfix," which lends credence to the claims. N-able calls the release "non-responsible communication."
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): X security accounts are pushing honeypot and probe sightings and hunt guidance (new admin accounts, unexpected endpoint scripts), while some note the 33 flaws "have not all been independently verified." An HN thread linking Huntress drew little discussion. Reddit r/msp and r/sysadmin were not checked.
-- CONFIDENCE: HIGH on the outage and vendor guidance. MODERATE on exploitation (honeypot attempts only; no confirmed victims). The researcher's full count of 33 is not independently verified.
-
-## ITEM 9: CISA KEV Adds Four with a 12 NOV Deadline — OpenSSH SSHole (Now Confirmed Breaching Systems), GPUStack, FreeSWITCH, IBM Aspera Faspex
-
-- WHAT / WHERE / WHEN: On 09 NOV (catalog version 2026.11.09, released 1954 UTC / 1354 CST), CISA added CVE-2026-123158 (OpenBSD OpenSSH on Linux, auth bypass, "SSHole"), CVE-2026-102895 (GPUStack improper authentication, giving unauthenticated admin access, secret disclosure and code execution via `POST /v2/inference-backends/from-yaml`), CVE-2026-116779 (SignalWire FreeSWITCH code injection allowing credential disclosure, call control and command execution) and CVE-2026-123218 (IBM Aspera Faspex incorrect authorization leading to privilege escalation). All four are due 12 NOV, three days instead of the usual three weeks. Each carries a BOD 26-04 "Forensics Triage" requirement, and ransomware use is listed as "Unknown." heise lists the fixes as GPUStack 2.2.0, FreeSWITCH 1.11.3 and Aspera Faspex 5.0.19 PL1, with CVSS 9.8 for those three. BleepingComputer reported 09 NOV that SSHole attempts began 05 NOV, the day a proof of concept appeared, and that successful exploitation was recorded the next day. It says post-access activity includes reconnaissance, theft of credentials and SSH keys, and persistence through `authorized_keys` edits or startup services. Microsoft's update guide also lists CVE-2026-123158, rated Important.
-- IMPACT ASSESSMENT: SSHole is now confirmed as a breach vector, not just scanning, for Alpine/musl hosts without PAM. GPUStack matters for homelab and enterprise AI-GPU clusters; its flaw exposes cloud-provider secrets. FreeSWITCH underpins many VoIP and PBX stacks.
-- ACTION FOR ADMINS: Patch by 12 NOV. For SSHole: upgrade to OpenSSH 10.6p2 or later and restart sshd, or set `PasswordAuthentication no`. On any exposed Alpine host, assume compromise and check `authorized_keys`, new services and `Accepted password` log lines for key-only accounts. Upgrade GPUStack to 2.2.0 and rotate the cloud and worker secrets it held. Upgrade FreeSWITCH to 1.11.3 or later and Aspera Faspex to 5.0.19 PL1 or later.
-- SOURCE SYNOPSIS: CISA KEV JSON feed and CISA alert (read directly); heise (10 NOV, read directly); BleepingComputer (09 NOV, search excerpts; direct fetch blocked); eSecurity Planet and The Hacker News (search excerpts); MSRC CVRF.
-- FRAMING (TRADE/MAINSTREAM): heise: "assume that systems accessible from the internet have been compromised," because CISA released no indicators of compromise.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): On X, admins urged starting with SSHole first among the four. One researcher posted a cyber-range detonation with PCAPs and Zeek logs. A Shodan-watcher noted SSHole and SonicWall CVE-2026-19868 are not yet tagged in Shodan, so exposure counts are unknown. The HN repost of BleepingComputer got little traction; the earlier "*sshole, or when are we going to get rid of C?" thread (06 NOV) is still the main discussion.
+- WHAT / WHERE / WHEN: On 10 NOV, N-able released N-central 2026.4 Hotfix 2 (build 2026.4.1.26), which addresses "the most critical" of the Able2Shell flaws disclosed 08 NOV. N-able published seven CVEs: CVE-2026-125883 (multiple XXE, CVSSv4 9.3), CVE-2026-125881 (SSRF in service-import schema validation, 9.3), CVE-2026-125878 (OGNL injection, 8.7), CVE-2026-125879 (root escalation through a syslog-ng config the `nable` user can write, 8.6), CVE-2026-125882 (RCE through file-repository upload path traversal, 8.6, credited to Nate Fair of Sprocket Security), CVE-2026-91000 (insecure IPC escalation, 8.4, reserved 14 SEP, before the public dump) and CVE-2026-125880 (stored XSS through MMS3 patch metadata, 8.3). Rapid7 says N-able confirmed on 11 NOV that hosted servers in every region were upgraded. The hotfix removes legacy MDM and temporarily disables built-in remote control; Take Control still works. Hosted and on-prem customers must upgrade agents first and probes second, because an upgraded probe cannot talk to old agents. A follow-up hotfix is planned for the remaining issues. N-able reported scanning tied to the public PoC but says it has no evidence of successful exploitation in customer environments; Huntress has seen none among its partners.
+- IMPACT ASSESSMENT: The emergency outage is ending, but only seven CVEs cover what the researcher called 33 issues, so expect a second hotfix. The agent-first order matters: if you get it wrong, you lose visibility of endpoints.
+- ACTION FOR ADMINS: Upgrade on-prem N-central to 2026.4.1.26 before reconnecting it to the internet. Then upgrade agents, then probes. Before restoring access, review logs from 08 NOV onward for new admin accounts, password resets and scripts pushed to endpoints. If an MSP manages you, ask them to confirm the upgrade and the log review.
+- SOURCE SYNOPSIS: Tenable FAQ, Rapid7 ETR (with 11 NOV update), Huntress blog, BleepingComputer, and the N-able status page excerpt (search excerpts; none opened directly).
+- FRAMING (TRADE/MAINSTREAM): Rapid7 urged an emergency upgrade "outside of normal patching cycles."
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): No HN stories on the hotfix in the window. r/msp was not checked.
 - CONFIDENCE: HIGH.
 
-## ITEM 10: Carried Threats — SonicWall CVE-2026-19868 (KEV Due 20 NOV) and WP Duplicate CVE-2026-123751 (Still No Patch)
+## ITEM 7: CISA KEV Adds Six on 10 NOV — Outlook, Chrome, Barracuda ESG Chain (Due 13 NOV), Cisco BroadWorks, Openwave
 
-- WHAT / WHERE / WHEN: The SonicWall SonicOS SSL-VPN SAML/MFA bypass (CVE-2026-19868) is still in KEV with a 20 NOV due date; no new SonicWall advisory or indicators of compromise were found this run. The WP Duplicate (formerly LocalSync) plugin, through 1.1.11, still has no official fix for CVE-2026-123751, an unauthenticated arbitrary file upload exploited in the wild. Patchstack, GitHub Advisory GHSA-v9cp-82qp-rrj6 and SecurityOnline all still say no patch. It is not in KEV.
-- IMPACT ASSESSMENT: No change from 09 NOV. Both remain open perimeter risks.
-- ACTION FOR ADMINS: Upgrade SonicOS and audit SSL-VPN logins that skipped SAML. Delete WP Duplicate (deactivating it is not enough) and look for stray PHP files.
-- SOURCE SYNOPSIS: CISA KEV JSON (read directly); Patchstack, GitHub Advisory Database, SecurityOnline (search excerpts).
-- FRAMING (TRADE/MAINSTREAM): Unchanged.
+- WHAT / WHERE / WHEN: CISA catalog version 2026.11.10 (released 1303 CST) added CVE-2026-124194 (Microsoft Outlook, due 24 NOV), CVE-2026-125350 (Chromium XML use-after-free, due 24 NOV), CVE-2026-116606 and CVE-2026-111560 (Barracuda, due 13 NOV), CVE-2026-20320 (Cisco BroadWorks XXE, due 24 NOV) and CVE-2026-111793 (Openwave Webtop Media Transcoder, due 24 NOV). All carry BOD 26-04 forensic-triage requirements. Barracuda: CVE-2026-116606 (CVSS 9.3) lets an unauthenticated attacker who can reach the ESG admin UI restore a crafted backup and change global config; CVE-2026-111560 (8.6) is an admin command injection through the timezone field that gives root on ESG, ADC, WAF, WSG, BMA and WCC. Chained, they give root. Mandiant found both; Barracuda patched them 02 NOV (ESG 9.4.0.030 or later) and late on 09 NOV said it had seen exploitation "affecting a small number of organizations." Previdian logged 17 attempts against CVE-2026-116606 from 15 IPs between 09 and 11 NOV (SecurityWeek). Cisco BroadWorks CVE-2026-20320 was patched in August (RI.2026.07). Malbear Labs says a Chinese-speaking actor used an autonomous framework built on a jailbroken DeepSeek model ("Operation Snowball") to exploit it against a European telecom's BroadWorks XSP on port 2208, stealing private keys and SSL credentials and, over two weeks, thousands of subscriber billing and device records affecting 13 hosted organizations. Cisco's advisory still said PSIRT was not aware of malicious use.
+- IMPACT ASSESSMENT: Barracuda ESG is a repeat target for Chinese state actors (2023 campaign), and the three-day deadline signals CISA sees urgent risk. BroadWorks matters mainly to telecoms and hosted-voice providers; for most US businesses it is a supplier question.
+- ACTION FOR ADMINS: Patch Barracuda ESG to 9.4.0.030 or later and the other appliances to their listed fixes by 13 NOV, take admin UIs off the internet, and review config-import and timezone-change events. Ask any hosted-voice/UCaaS provider whether BroadWorks is on RI.2026.07 or later. Openwave affects only Webtop operators.
+- SOURCE SYNOPSIS: CISA KEV JSON (read directly); Barracuda advisory and Mandiant MNDT-2026-0041/0042 (search excerpts); The Register, SecurityWeek, BleepingComputer, The Hacker News (search excerpts); Cisco advisory (search excerpt).
+- FRAMING (TRADE/MAINSTREAM): The Register quoted Purplecop's Tausif Ahmed: "If your Email Security Gateway's admin UI is open to the internet, that's the first thing I'd close today." The Hacker News stressed the AI-agent angle of the BroadWorks attacks.
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): No HN traction in the window. X and Reddit were not checked.
+- CONFIDENCE: HIGH on KEV entries and vendor statements. MODERATE on Malbear's AI-campaign details (single research firm).
+
+## ITEM 8: Turla's "Cereal" Toolkit Hid Inside Exchange to Steal NATO and EU Mail from Romanian and Kazakh Government Servers
+
+- WHAT / WHERE / WHEN: ESET published research on 10 NOV attributing a campaign against government Exchange servers in Romania and Kazakhstan to Turla (FSB-linked; also called Secret Blizzard and Venomous Bear). A previously unknown toolkit, Cereal, includes CerealBox, which is embedded in an Exchange mail-processing service to capture selected messages in transit. In Romania it targeted mail exchanged with NATO and EU institutions. The attackers used the victims' own Exchange servers as command hubs instead of external C2. ESET first found it in November 2025 and could not determine initial access.
+- IMPACT ASSESSMENT: The victims were not in the US, but the technique (persistence inside Exchange transport with no external C2) defeats network-based detection and applies to any on-prem Exchange. Combined with this month's Exchange CVEs, it strengthens the case for moving off or hardening on-prem Exchange.
+- ACTION FOR ADMINS: On on-prem Exchange, inventory transport agents and loaded modules against a known baseline, and check ESET's published indicators.
+- SOURCE SYNOPSIS: The Record (10 NOV, read directly), citing ESET; ESET's own report was not opened.
+- FRAMING (TRADE/MAINSTREAM): ESET called abusing Exchange as a central hub "a rare technique, used by only a handful of APT groups."
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): HN post "Exchange for breakfast: Turla's Cereal tricks are not for kids" (ESET's title) had 1 point.
+- CONFIDENCE: HIGH (vendor attribution).
+
+## ITEM 9: Incidents — Fireworks AI Breaches Hit Notion Customers; Vanderbilt Still Restricted; BYOD Also Claims Texas HHS
+
+- WHAT / WHERE / WHEN: AI inference provider Fireworks updated its notice on 09 NOV: a "well-known, financially motivated" group stole account and billing data and secrets in a breach found 06 OCT, and a second intrusion on 23–24 OCT through a third-party cloud provider hosting its R&D machines exposed invoices, payment history and AI datasets. Unit 42 is investigating. Notion said some of its customers were affected through its use of Fireworks for its Insights feature and for open-weight model inference. Notion has disabled Insights and stopped serving open-weight models through Fireworks. The Record ties this to the "LLMJacking" trend Google and Mandiant described last week, with fraudulent cloud charges over $100,000 in a day at some victims. Vanderbilt restored campus Wi-Fi Monday evening, but most systems remain restricted; classes resumed Tuesday, and athletics ticketing is down (The Register, 10 NOV). BYOD also claimed an attack on Texas Health and Human Services, which has not confirmed an incident.
+- IMPACT ASSESSMENT: Third-party AI inference providers are now part of the supply-chain attack surface: data sent to them for "features" can be stolen. Stolen API keys turn quickly into large cloud bills.
+- ACTION FOR ADMINS: Inventory which SaaS tools send your data to third-party AI providers. Rotate LLM and cloud API keys, set spend alerts and quotas on AI services, and check Notion admin notices if your organization uses Notion.
+- SOURCE SYNOPSIS: The Record (10 NOV, read directly); The Register (10 NOV, read directly).
+- FRAMING (TRADE/MAINSTREAM): The Register led with the audio ransom message played on Vanderbilt computers.
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): The Fireworks incident post on HN had 2 points.
+- CONFIDENCE: HIGH on company statements. LOW on BYOD's claims (see Quarantined).
+
+## ITEM 10: Carried Threats — OpenSSH SSHole and Three Others Due 12 NOV; SonicWall Due 20 NOV; WP Duplicate Still Unpatched
+
+- WHAT / WHERE / WHEN: The four KEV entries from 09 NOV are due tomorrow, 12 NOV: OpenSSH "SSHole" CVE-2026-123158, GPUStack CVE-2026-102895, FreeSWITCH CVE-2026-116779 and IBM Aspera Faspex CVE-2026-123218. VMware ESX CVE-2026-41709 is due today, and Ivanti Connect Secure CVE-2026-118527 is due 13 NOV. No new developments were found this run for SonicWall CVE-2026-19868 (due 20 NOV) or WP Duplicate CVE-2026-123751 (still no fix, not in KEV).
+- IMPACT ASSESSMENT: No change in risk; the deadlines are the news.
+- ACTION FOR ADMINS: Finish the SSHole upgrade (OpenSSH 10.6p2 or later) and the other 12 NOV items today. Delete WP Duplicate.
+- SOURCE SYNOPSIS: CISA KEV JSON (read directly); prior IT daily.
+- FRAMING (TRADE/MAINSTREAM): No new coverage.
 - FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
 - CONFIDENCE: HIGH.
-
-## ITEM 11: France Attributes Refrigeration Sabotage at ~700 Stores to IRGC's Shahid Kaveh (CyberAv3ngers); Names Commanders
-
-- WHAT / WHERE / WHEN: France's Cyber Crisis Coordination Centre (ANSSI, military cyber command, DGSE and DGSI) published a five-page report on Monday, 09 NOV. It attributes the October sabotage of industrial refrigeration controllers at about 700 French grocery sites, which caused extensive food losses and at least 15 fires, to Shahid Kaveh, an IRGC unit. The US government has previously identified Shahid Kaveh as CyberAv3ngers, the group behind attacks on US water-utility controllers. The annex names Hamid Reza Lashgarian, Mahdi Lashgarian and Reza Salarvand. ANSSI also found the group targeting Schneider Electric equipment at small hydroelectric sites. France summoned Iran's ambassador and will seek EU sanctions, and Paris prosecutors requested international arrest warrants. A second wave in early November hit at least 11 European countries and is not covered by the report (The Record, 09 NOV).
-- IMPACT ASSESSMENT: The same actor has hit US OT before, so internet-exposed refrigeration, building-management and PLC interfaces in US retail and food supply are plausible targets, particularly given US–Iran hostilities.
-- ACTION FOR ADMINS: Remove internet exposure of OT, HMI and refrigeration-controller interfaces, change default credentials, and check them against the CISA and FBI CyberAv3ngers advisories.
-- SOURCE SYNOPSIS: The Record (09 NOV, read directly); BleepingComputer (09 NOV, search excerpt).
-- FRAMING (TRADE/MAINSTREAM): French Foreign Minister Barrot called the sabotage unprecedented in scale and aggressiveness.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
-- CONFIDENCE: HIGH on the attribution as stated by France. Iran had not responded.
-
-## ITEM 12: Incidents — Vanderbilt BYOD Ransomware Attack; Mittwald Hosting Breach via MCP Server; SEGA Newsletter Vendor Leaks 2.2 Million Emails
-
-- WHAT / WHERE / WHEN: Vanderbilt University confirmed an "active cybersecurity incident" on Monday, 09 NOV. It told students and staff to shut down university devices and disconnect from campus Wi-Fi. The BYOD ransomware gang listed Vanderbilt on its leak site, and BleepingComputer confirmed that the ransom note's link leads to BYOD's site. Vanderbilt has not confirmed encryption or data theft. Ransomware researcher Allan Liska told The Record BYOD's first victim appeared on 29 SEP; the group is also linked to attacks on Michigan State and the University of New Mexico. German host Mittwald CM Service said attackers went undetected for eight days and compromised 56 customer projects through a flaw in the MCP server that lets customers connect AI assistants to its mStudio platform. It said log timing suggests AI-assisted speed but offered no other evidence (The Record, 09 NOV). SEGA disclosed on 09 NOV that a breach at newsletter provider ARARA exposed 2,196,044 email addresses, including 92,273 records with extra delivery information, from 11 newsletters sent between July and October 2026. SEGA says names, addresses, phone numbers, card data and passwords were not exposed, and SEGA Account emails were not affected.
-- IMPACT ASSESSMENT: Mittwald is another case of AI-integration endpoints (MCP servers) becoming an attack surface. SEGA newsletter subscribers should expect targeted phishing.
-- ACTION FOR ADMINS: Inventory and authenticate any MCP or AI-assistant endpoints exposed to customers or the internet. As a gamer, watch for SEGA-themed phishing.
-- SOURCE SYNOPSIS: The Record (09 NOV, Vanderbilt and Mittwald, read directly); BleepingComputer (09 NOV, search excerpts); SEGA press release (search title) and CyberInsider (search excerpt).
-- FRAMING (TRADE/MAINSTREAM): The Record tied BYOD's rise to reports of AI-fueled ransomware growth; Halcyon counted a 40% rise from July to September.
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): HN posts on Vanderbilt drew under 10 points; one repeated BYOD's claim of "over 1M" records (see Quarantined).
-- CONFIDENCE: HIGH on company statements. LOW on BYOD's data claims and on Mittwald's AI attribution.
 
 ## GAME PRESERVATION AND PIRACY
 
-## ITEM 13: Football Manager 27 Launches Today with a Denuvo Bypass Already Out
+## ITEM 11: Piracy and DRM — WeLib Hit with $19.5M Default Judgment; ARTIFACT Updates Denuvo Hypervisor Bypasses; Destruction AllStars Reconfirmed for 25 NOV
 
-- WHAT / WHERE / WHEN: Sports Interactive's Football Manager 27 launches 10 NOV. The ARTIFACT group's hypervisor-based Denuvo bypass, released around 04 NOV during the pre-launch window, means the full game is effectively pirated on day one; CrackWatcher lists FM27 as cracked by hypervisor bypass. CrackWatcher also lists recent bypasses for Phantom Blade Zero, Star Wars: Galactic Racer and Final Fantasy Resonance. No statement from Sports Interactive or Sega on the bypass was found.
-- IMPACT ASSESSMENT: Denuvo's launch-window protection failed for a major release. Hypervisor bypasses need the system's protections lowered below the operating system, so they are a high-risk install on any PC you care about.
-- ACTION FOR ADMINS: None (consumer). On managed endpoints, block unsigned drivers and keep HVCI on.
-- SOURCE SYNOPSIS: Football Manager official site and Steam store (search titles); VGTimes and games-man.ru (04 NOV); CrackWatcher (search summary). r/CrackWatch was not checked.
-- FRAMING (TRADE/MAINSTREAM): VGTimes headline: "cracked ahead of launch."
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Tracker sites only; Reddit not checked.
-- CONFIDENCE: MODERATE (enthusiast trackers; no publisher confirmation).
-
-## ITEM 14: Shutdowns and Delistings — Destruction AllStars Offline 25 NOV at 0900 CST; Growtopia PC Delisting 01 DEC; Several Steam Removals
-
-- WHAT / WHERE / WHEN: Destruction AllStars' remaining server support ends 25 NOV at 1500 UTC (0900 CST). Multiplayer is already gone; arcade challenges may stay playable, but Sony says functionality could be affected (PlayStation server-support page via search; Polygon, VGC). PlayStation LifeStyle (09 NOV) reconfirmed that Hotel Transylvania 3: Monsters Overboard and Avatar: The Last Airbender – Quest for Balance leave the PS Store at the end of December because licenses are expiring. Delisted Games logged new removals: TrollMaker shuts down 16 NOV, less than eight months after launch; Ubisoft's Growtopia leaves PC storefronts 01 DEC; Asterism: Apex of War is leaving Steam because HorseFeathers is closing; Whale Captain is leaving temporarily; and two free games, Battle Sweeper and Sadball, are leaving Steam.
-- IMPACT ASSESSMENT: More online-dependent games are becoming unplayable. Single-player delistings keep existing purchases; server shutdowns do not.
-- ACTION FOR ADMINS: None. Claim the free titles before removal if you want them; buy the licensed titles before 31 DEC.
-- SOURCE SYNOPSIS: Delisted Games (09–10 NOV, read directly); PlayStation LifeStyle (09 NOV, read directly); PlayStation, Polygon, VGC, Game Developer (search excerpts).
-- FRAMING (TRADE/MAINSTREAM): Delisted Games' tagline: "Even in the age of digital, nothing lasts forever."
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked this run.
-- CONFIDENCE: HIGH.
+- WHAT / WHERE / WHEN: TorrentFreak and Publishers Weekly report that the shadow library WeLib was hit with a $19.5 million default judgment on 10 NOV and ordered off its domains, with registrars and hosts told to disable them. Russian gaming sites (Playground.ru and others) report that the ARTIFACT group updated its hypervisor Denuvo bypasses for Stellar Blade, Planet Zoo 2, Football Manager 27 and Crimson Desert. SavePoint (10 NOV) reconfirmed that Destruction AllStars servers shut down 25 NOV, leaving only Arcade Mode challenges.
+- IMPACT ASSESSMENT: Hypervisor bypasses keep requiring users to disable core OS protections, which is a malware risk. Destruction AllStars joins the list of purchased games losing their online play.
+- ACTION FOR ADMINS: None. Keep HVCI and Secure Boot on gaming PCs; do not run hypervisor bypasses on machines that matter.
+- SOURCE SYNOPSIS: TorrentFreak archive headline and Publishers Weekly (search excerpt); Playground.ru and VASILISK (search titles; enthusiast); SavePoint (search excerpt).
+- FRAMING (TRADE/MAINSTREAM): Routine.
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): r/CrackWatch was not checked.
+- CONFIDENCE: HIGH (WeLib, Destruction AllStars); MODERATE (ARTIFACT updates, enthusiast sources).
 
 ## EMULATION
 
-## ITEM 15: Nintendo DMCA Takes Down Citron NEO and 70 Forks on GitHub; Eden and Switch 2 Forks Not Named
+## ITEM 12: Nintendo Expands GitHub DMCA Campaign to Switch Modchip Firmware — 144-Repo Picofly Network Disabled; Two More yuzu Copies Wiped
 
-- WHAT / WHERE / WHEN: GitHub published two Nintendo DMCA notices dated 06 NOV on 09 NOV. The first, committed at 1728 UTC (1128 CST), names `citron-neo/emulator`. Because the repo was actively being forked, GitHub processed it "against the entire network of 71 repositories." The second, at 1759 UTC, targets a single Yuzu copy (`IpwnedU/yuzu-mainline-master`). Both use Nintendo's standard 17 U.S.C. 1201 argument (emulators use unauthorized copies of prod.keys) and cite the Tropic Haze (Yuzu) judgment and a 2025 Colorado case. As of 10 NOV, `github.com/citron-neo/emulator` returns 404. LoveGame reports that the listed forks return 451, that the separate `citron-neo/CI` build repo is up but its last nightly is from 06 NOV, and that an unconfirmed copy appeared on a self-hosted Forgejo server. Citron NEO has not commented. Eden, which hosts its own source, and Switch 2 forks such as Eglantine and Lichii do not appear in any published notice.
-- IMPACT ASSESSMENT: This is Nintendo's first GitHub action since the Switch 2 fork surge, but it hit a Switch 1 emulator. Installed copies still work. Fake download sites usually follow takedowns.
-- ACTION FOR ADMINS: None. Download builds only from a project's verified home; treat "Citron NEO mirror" sites as malware risks.
-- SOURCE SYNOPSIS: GitHub DMCA repository notices 2026-11-06-nintendo-3 and -4 (read directly, with commit timestamps); direct HTTP check of the repo (404); LoveGame (10 NOV, read directly; enthusiast site).
-- FRAMING (TRADE/MAINSTREAM): LoveGame: "The August sweep skipped Citron NEO. This time it was the main target."
-- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Little reaction found on X in the sample searched; r/emulation and r/yuzu were not checked.
-- CONFIDENCE: HIGH on the notice and takedown. MODERATE on fork and CI status details (single enthusiast source).
+- WHAT / WHERE / WHEN: GitHub published a Nintendo of America DMCA notice dated 06 NOV on Tuesday, 10 NOV. It targets `Ansem-SoD/Picofly`, firmware for an RP2040-Zero-based Switch modchip, and also covers SX Core, SX Lite and HWFLY firmware. Because the network was over 100 repositories and Nintendo said all or most forks infringe, GitHub disabled all 144. Nintendo argues the firmware bypasses the Switch's boot sequence and cryptographic signatures (17 U.S.C. 1201) and cites the Team-Xecuter criminal case (No. 2:20-cr-00127-RSL), in which Gary Bowser pleaded guilty. TorrentFreak says none of Nintendo's 90 earlier GitHub notices mentioned modchips. Several other Picofly/HWFLY firmware repos, including what a GBAtemp user calls the original Picofly source, were still up when TorrentFreak checked Wednesday. The same day's notices also covered Citron NEO (71 repos, reported 10 NOV) and two yuzu copies (`IpwnedU/yuzu-mainline-master` and `IpwnedU/yuzu-android-master`), whose owner has since wiped the code and points to the Internet Archive. No counter-notice has been filed. Switch 2 forks such as Eden NX2, Eglantine and Lichii were still being updated several times a day (Emu-France, 10 NOV) and are not named in any notice.
+- IMPACT ASSESSMENT: This is a new front: Nintendo is now going after hardware-mod firmware, not just emulators and key tools. Installed modchips keep working, but finding firmware and updates will get harder, and fake "mirror" downloads are likely.
+- ACTION FOR ADMINS: None. Get firmware only from known project sources; treat re-uploads as untrusted.
+- SOURCE SYNOPSIS: TorrentFreak (11 NOV, read directly, linking the GitHub notices); Emu-France Switch 2 roundup (read directly). The GitHub notice itself was not opened.
+- FRAMING (TRADE/MAINSTREAM): TorrentFreak: "After taking down Switch emulators and hacking tools on GitHub for years, Nintendo is now going after modchip firmware."
+- FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): The HN repost had 4 points. GBAtemp and r/SwitchHacks were not checked.
+- CONFIDENCE: HIGH.
 
-## ITEM 16: Emulator Releases — PCSX2, Xenia and shadPS4 Nightlies; Dolphin 2609b Still Current
+## ITEM 13: Emulator Releases — RPCS3 Drakengard 3 Performance Jump; Dolphin 2609b Still Current
 
-- WHAT / WHERE / WHEN: On 09 NOV, PCSX2 posted pre-release builds v2.9.166 through v2.9.168, with x64 profiler and graphics fixes. Xenia updated to v1.0.2844, Xenia Edge had a 09 NOV Git build, and shadPS4 posted two pre-release builds. Dolphin's latest is still 2609b (08 NOV, with savestate and FIFO hardening). RPCS3's last tagged build is v0.0.43 Alpha (30 SEP).
-- IMPACT ASSESSMENT: Routine. Updating to Dolphin 2609b is still the security-relevant step from 09 NOV.
+- WHAT / WHERE / WHEN: Notebookcheck reports a large RPCS3 performance gain in Drakengard 3, with 240 to 360 FPS on suitable hardware. Dolphin's latest release is still 2609b (with crash, GPU and security fixes). There were no new releases of note found for Xenia, shadPS4 or PCSX2 beyond routine nightlies.
+- IMPACT ASSESSMENT: Routine.
 - ACTION FOR ADMINS: None beyond keeping Dolphin on 2609b or later.
-- SOURCE SYNOPSIS: PCSX2 and RPCS3 GitHub releases, Emu-France "Mini sac de GIT" (09 NOV) and whatsnew.fyi (search excerpts only).
+- SOURCE SYNOPSIS: Notebookcheck and TechSpot (search excerpts only).
 - FRAMING (TRADE/MAINSTREAM): Routine.
 - FRAMING (COMMUNITY/ALT: HN, Reddit, X, forums): Not checked.
-- CONFIDENCE: MODERATE (search summaries; release pages not opened).
+- CONFIDENCE: MODERATE (search summaries).
 
 ## PATCH AND KEV WATCH
 
-- NEW KEV, added 09 NOV, federal due 12 NOV (forensic triage required): CVE-2026-123158 OpenSSH "SSHole" (fix 10.6p2); CVE-2026-102895 GPUStack (fix 2.2.0); CVE-2026-116779 SignalWire FreeSWITCH (fix 1.11.3); CVE-2026-123218 IBM Aspera Faspex (fix 5.0.19 PL1).
-- KEV due this week (verified against the CISA feed): Adobe Commerce/Magento CVE-2026-48356 and Google Brotli CVE-2026-111497, due 10 NOV (today); VMware ESX CVE-2026-41709, due 11 NOV; Ivanti Connect Secure CVE-2026-118527, due 13 NOV.
-- KEV due next week: Apple CVE-2024-27834, due 18 NOV; SonicWall CVE-2026-19868, due 20 NOV.
-- Past due: WordPress Core CVE-2026-119977 (06 NOV); Ivanti CVE-2026-111357 (02 NOV); Cisco ASA/FTD CVE-2026-76418 and GitLab CVE-2026-97229 (01 NOV); Linux kernel CVE-2026-46300 (31 OCT).
-- Exploited, not in KEV: Chrome CVE-2026-125350 (fix 157.0.8103.50/.51); WP Duplicate CVE-2026-123751 (no patch, remove it); N-able N-central Able2Shell (no CVEs, no patch; honeypot attempts).
-- Critical patches today: SAP CVE-2026-76964, CVE-2026-89126, CVE-2026-89103 and CVE-2026-120017 (all CVSS 10.0); Firefox 160 / ESR 153.7 / ESR 115.45. Microsoft Patch Tuesday is pending at 1200 CST; Adobe's November bulletins were not checked this run.
-- Pending fixes: Ubuntu LTS kernels for CVE-2026-98432 (work in progress); N-able hotfix (ETA midday ET 10 NOV).
-- End of support today: .NET 8, .NET 9; Windows 11 23H2 Enterprise/Education final update (per secondary source).
+- NEW KEV, added 10 NOV: CVE-2026-116606 and CVE-2026-111560 Barracuda (due 13 NOV; ESG 9.4.0.030+); CVE-2026-124194 Microsoft Outlook (due 24 NOV; Office update); CVE-2026-125350 Chromium (due 24 NOV; Chrome 157.0.8103.50+, Edge 157.0.4341.46+); CVE-2026-20320 Cisco BroadWorks (due 24 NOV; RI.2026.07); CVE-2026-111793 Openwave Webtop (due 24 NOV).
+- KEV due today and this week (verified against the CISA feed): VMware ESX CVE-2026-41709 (11 NOV); OpenSSH CVE-2026-123158, GPUStack CVE-2026-102895, FreeSWITCH CVE-2026-116779, IBM Aspera Faspex CVE-2026-123218 (12 NOV); Ivanti Connect Secure CVE-2026-118527 and the two Barracuda CVEs (13 NOV).
+- KEV due next week: Apple CVE-2024-27834 (18 NOV); SonicWall CVE-2026-19868 (20 NOV).
+- Past due as of today: Adobe Commerce CVE-2026-48356 and Google Brotli CVE-2026-111497 (10 NOV), plus the older items listed in the 10 NOV IT daily.
+- Exploited, not in KEV: WP Duplicate CVE-2026-123751 (no patch). N-able N-central Able2Shell: scanning only, now patched in 2026.4.1.26 (seven CVEs, not in KEV).
+- Critical patches this cycle: Microsoft November (CVE-2026-116928 Windows Search, CVE-2026-119958 LDAP, CVE-2026-119952 Schannel, CVE-2026-118207 Exchange, CVE-2026-118146 AD DS); Adobe Connect APSB26-191 and AEM APSB26-189; SAP CVSS 10.0 fixes from 10 NOV (see prior daily); N-central 2026.4 HF2.
+- Pending fixes: N-able follow-up hotfix; Ubuntu LTS kernels for CVE-2026-98432 (not rechecked this run).
+- End of support: Windows 11 23H2 Enterprise/Education received its final update on 10 NOV; .NET 8 and .NET 9 ended support 10 NOV.
 
 ## OPEN THREADS CARRIED FORWARD
 
-- OpenSSH SSHole CVE-2026-123158: moved into KEV 09 NOV (due 12 NOV); confirmed breaches with credential theft and persistence. Track exposure counts once Shodan tags it.
-- SonicWall CVE-2026-19868: KEV due 20 NOV; no new vendor details or indicators.
-- WP Duplicate CVE-2026-123751: still unpatched; not in KEV.
-- Microsoft Patch Tuesday 10 NOV: pending at 1200 CST. Cover zero-days, KEV additions and r/sysadmin breakage reports in the 11 NOV IT daily.
-- APT CVE-2026-109518: fixed since 04 NOV; no exploitation reported. Ubuntu kernel CVE-2026-98432 is still unfixed on LTS.
-- Nvidia / Jensen Huang: escalated to FBI interest per Trump and a securities class action; earnings 17 NOV.
-- NoName057(16) doxxing of 18 European officials: no new developments found this run.
-- Football Manager 27 Denuvo bypass: game launches today, bypass already out.
-- Destruction AllStars: full shutdown 25 NOV at 0900 CST.
-- Switch 2 Eden forks: still not named in any public Nintendo DMCA notice; the Citron NEO takedown shows Nintendo is active on GitHub again.
-- New: N-able Able2Shell hotfix and restore guidance; whether CVEs and a KEV entry follow; any confirmed MSP compromises.
-- New: Chrome CVE-2026-125350 KEV status and Edge patch.
+- Microsoft Patch Tuesday: released and covered here. Next, watch for exploitation of the Windows Search/Exchange and LDAP bugs and wider KB5132061 install problems.
+- N-able Able2Shell: Hotfix 2 out with seven CVEs; follow-up hotfix pending; still no confirmed customer compromise.
+- Chrome CVE-2026-125350: now in KEV (due 24 NOV), and Edge is patched. Closed apart from the deadline.
+- OpenSSH SSHole and the three other 12 NOV KEV items: deadline tomorrow.
+- SonicWall CVE-2026-19868 (due 20 NOV) and WP Duplicate CVE-2026-123751 (unpatched): no change.
+- Ubuntu kernel CVE-2026-98432: not rechecked this run.
+- Nvidia / Jensen Huang: Wachtell investigation, congressional briefing request, earnings 17 NOV.
+- Vanderbilt BYOD ransomware: systems still restricted; data-theft claims unverified.
+- Football Manager 27 / Denuvo: ARTIFACT updated the bypass after launch.
+- Destruction AllStars: shutdown 25 NOV at 0900 CST.
+- Nintendo GitHub campaign: now includes modchip firmware (Picofly). Switch 2 Eden forks are still not named in any notice.
+- NoName057(16) doxxing: not rechecked this run.
+- New: Barracuda ESG exploitation (who is behind it, scale); BroadWorks "Operation Snowball"; Turla Cereal indicators.
 
 ## UNCONFIRMED / QUARANTINED
 
-- BYOD ransomware claims about Vanderbilt: "Over 1 Million SSNs," full domain-controller takeover, and encrypted databases. These come from the leak site and ransom note and are not confirmed by the university.
-- The full count of 33 Able2Shell vulnerabilities is the researcher's claim; not all have been independently verified. N-able has confirmed only that it is building a hotfix.
-- Mittwald's suggestion that the attacker used AI rests only on log timing.
-- Espionage allegations against Alice Huang rest on anonymous US intelligence sourcing; China denies them.
-- An AI-generated "predicted" news page (next-edition.com) claimed Microsoft patched an exploited Windows zero-day today. It is fabricated and was excluded.
-- Self-hosted Forgejo copy of Citron NEO: its existence is reported by LoveGame; the team has not confirmed it.
+- BYOD's claims against Vanderbilt ("over 1 million SSNs," full domain-controller takeover, locked databases) and its claimed attack on Texas HHS are leak-site claims only, not confirmed by either institution.
+- Malbear Labs' account of an autonomous AI agent built on a jailbroken DeepSeek model comes from a single research firm, and Cisco PSIRT had not acknowledged malicious use as of its advisory text.
+- The congressional subpoena threat against Jensen Huang comes from one outlet's headline (Tom's Hardware) and was not confirmed independently.
+- The Alice Huang espionage allegation rests on anonymous intelligence sourcing; China denies it.
+- The workaround for KB5132061 install failures (disabling Windows Sandbox) comes from one user report, not Microsoft.
 
 ## GAPS AND NOTES
 
-- Microsoft Patch Tuesday was not released by cutoff. Note for the record: the release time is 10:00 a.m. PT, which is 1200 CST, not 1000 CST. Adobe's Patch Tuesday bulletins were not checked.
-- BleepingComputer article pages returned 403 to the fetch tool; details come from search excerpts. The N-able status page (uptime.n-able.com) could not be read directly.
-- Reddit (r/sysadmin, r/msp, r/netsec, r/emulation, r/Piracy, r/CrackWatch), Slashdot and lobste.rs were not searched; the Reddit JSON endpoint returned an HTML block page. Community framing comes from Hacker News (Algolia) and targeted X searches.
-- Correction to the 09 NOV IT daily: the "older KEV items" it marked as unverified (Adobe Commerce, Brotli, VMware ESX, Ivanti) are now verified against the CISA feed with the due dates listed above.
-- OpenAI items (a "Control Room" product page and ChatGPT Enterprise on AWS Marketplace) appeared in search, but the OpenAI page returned 404, so they are excluded. Apple, Amazon, Meta, xAI, Intel, AMD, Cisco, Broadcom, Oracle, Valve and Sony had no verified major items in the window.
-- Football Manager 27 crack status comes only from tracker sites; neither r/CrackWatch nor the publisher was checked.
+- Reddit (r/sysadmin Patch Tuesday megathread, r/msp, r/netsec, r/emulation, r/Piracy, r/CrackWatch), Slashdot, lobste.rs and X were not searched this run. Community framing comes only from Hacker News (Algolia), where none of the security stories got real traction.
+- BleepingComputer, SecurityWeek, The Hacker News, Tenable, Rapid7, Huntress and vendor pages were read through search excerpts, not opened directly. The Record, The Guardian, CNBC, The Register, TorrentFreak, ZDI and Emu-France were read directly. CISA KEV and MSRC data came straight from their feeds.
+- Microsoft's CVE total is reported differently by each outlet (1,090 to 1,259); this report gives the range rather than a single number.
+- Apple, Google (outside Chrome), Intel, AMD, Broadcom, Oracle, Valve, Sony and xAI had no verified major items in the window. Microsoft's CVRF lists two AMD Zen information-disclosure CVEs (CVE-2026-84004 and CVE-2026-84005) rated Important.
+- No corrections to the 10 NOV IT daily. Its N-able ETA of midday Eastern 10 NOV held: the hotfix shipped that day.
 
 UNCLASSIFIED // FOR INFORMATIONAL USE  
