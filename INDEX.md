@@ -96,6 +96,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-12 | Nvidia — Board Meets on Ousting Jensen Huang After Second Reported Affair; Shares Down 9% After Hours; No Decision Announced | [it-daily/2026-11-12.md](./it-daily/2026-11-12.md) | [PDF](./it-daily/2026-11-12.pdf) |
 | 2026-11-11 | Nvidia — Board Hires Wachtell to Investigate Huang; Shares Fell 5.47% Tuesday, Rebounding Premarket; Congressional Briefing Request | [it-daily/2026-11-11.md](./it-daily/2026-11-11.md) | [PDF](./it-daily/2026-11-11.pdf) |
 | 2026-11-10 | Nvidia — Trump Says FBI Is Looking at Huang Affair; Shareholder Class Action Filed; Shares Closed Down More Than 4% | [it-daily/2026-11-10.md](./it-daily/2026-11-10.md) | [PDF](./it-daily/2026-11-10.pdf) |
 | 2026-11-09 | Nvidia — Board Opens Independent Probe of CEO Jensen Huang over Alleged Chinese Intelligence Targeting; Shares Down ~5% Premarket | [it-daily/2026-11-09.md](./it-daily/2026-11-09.md) | [PDF](./it-daily/2026-11-09.pdf) |
