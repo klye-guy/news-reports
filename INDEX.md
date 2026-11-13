@@ -10,7 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
-| 2026-11-13 | Nvidia — Huang Resigns; Kress Interim CEO, Harvey Jones First Board Chair; Stock −4.3%; Senate and House Seek Testimony | [daily/2026-11-13.md](./daily/2026-11-13.md) |  |
+| 2026-11-13 | Nvidia — Huang Resigns; Kress Interim CEO, Harvey Jones First Board Chair; Stock −4.3%; Senate and House Seek Testimony | [daily/2026-11-13.md](./daily/2026-11-13.md) | [PDF](./daily/2026-11-13.pdf) |
 | 2026-11-12 | Elections — AP Calls Mississippi for Colom by 4,669; Hyde-Smith Concedes; Democrats to 55 Senate Seats; Peltola Lead Narrows to 3,975 | [daily/2026-11-12.md](./daily/2026-11-12.md) | [PDF](./daily/2026-11-12.pdf) |
 | 2026-11-11 | Congress — House Kills Hegseth Impeachment 211–204 on Motion to Refer; Massie Lone GOP No; Trump: "EXONERATION" | [daily/2026-11-11.md](./daily/2026-11-11.md) | [PDF](./daily/2026-11-11.pdf) |
 | 2026-11-10 | Iran Diplomacy — Trump After Qatar PM Meeting: War "Militarily Effectively Over," Blockade Stays; Rezaei: "Imaginary Talks"; Araghchi Denies Vance–Rezaei Meeting | [daily/2026-11-10.md](./daily/2026-11-10.md) | [PDF](./daily/2026-11-10.pdf) |
@@ -98,6 +98,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-13 | Nvidia — Huang Out, Kress Interim CEO and Jones Chair; Reuters Reports a Third Relationship; Employees Petition for His Return; Singapore Says US Gave "Limited" Help | [it-daily/2026-11-13.md](./it-daily/2026-11-13.md) | [PDF](./it-daily/2026-11-13.pdf) |
 | 2026-11-12 | Nvidia — Board Meets on Ousting Jensen Huang After Second Reported Affair; Shares Down 9% After Hours; No Decision Announced | [it-daily/2026-11-12.md](./it-daily/2026-11-12.md) | [PDF](./it-daily/2026-11-12.pdf) |
 | 2026-11-11 | Nvidia — Board Hires Wachtell to Investigate Huang; Shares Fell 5.47% Tuesday, Rebounding Premarket; Congressional Briefing Request | [it-daily/2026-11-11.md](./it-daily/2026-11-11.md) | [PDF](./it-daily/2026-11-11.pdf) |
 | 2026-11-10 | Nvidia — Trump Says FBI Is Looking at Huang Affair; Shareholder Class Action Filed; Shares Closed Down More Than 4% | [it-daily/2026-11-10.md](./it-daily/2026-11-10.md) | [PDF](./it-daily/2026-11-10.pdf) |
