@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-14 | Aviation — FAA Nationwide Ground Stop of About Four Hours After ATC Communications Failure; About 10,000 Cancellations; No Evidence of Cyberattack So Far | [daily/2026-11-14.md](./daily/2026-11-14.md) | [PDF](./daily/2026-11-14.pdf) |
 | 2026-11-13 | Nvidia — Huang Resigns; Kress Interim CEO, Harvey Jones First Board Chair; Stock −4.3%; Senate and House Seek Testimony | [daily/2026-11-13.md](./daily/2026-11-13.md) | [PDF](./daily/2026-11-13.pdf) |
 | 2026-11-12 | Elections — AP Calls Mississippi for Colom by 4,669; Hyde-Smith Concedes; Democrats to 55 Senate Seats; Peltola Lead Narrows to 3,975 | [daily/2026-11-12.md](./daily/2026-11-12.md) | [PDF](./daily/2026-11-12.pdf) |
 | 2026-11-11 | Congress — House Kills Hegseth Impeachment 211–204 on Motion to Refer; Massie Lone GOP No; Trump: "EXONERATION" | [daily/2026-11-11.md](./daily/2026-11-11.md) | [PDF](./daily/2026-11-11.pdf) |
