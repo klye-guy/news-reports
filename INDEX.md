@@ -99,6 +99,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-14 | Nvidia — Worst Week Since the Tariff Sell-Off; WSJ Says Huang Pushed "Circular" GPU Deals Over Kress's Objections; Researcher Finds Blackwell "Fingerprints" in Chinese Models | [it-daily/2026-11-14.md](./it-daily/2026-11-14.md) | [PDF](./it-daily/2026-11-14.pdf) |
 | 2026-11-13 | Nvidia — Huang Out, Kress Interim CEO and Jones Chair; Reuters Reports a Third Relationship; Employees Petition for His Return; Singapore Says US Gave "Limited" Help | [it-daily/2026-11-13.md](./it-daily/2026-11-13.md) | [PDF](./it-daily/2026-11-13.pdf) |
 | 2026-11-12 | Nvidia — Board Meets on Ousting Jensen Huang After Second Reported Affair; Shares Down 9% After Hours; No Decision Announced | [it-daily/2026-11-12.md](./it-daily/2026-11-12.md) | [PDF](./it-daily/2026-11-12.pdf) |
 | 2026-11-11 | Nvidia — Board Hires Wachtell to Investigate Huang; Shares Fell 5.47% Tuesday, Rebounding Premarket; Congressional Briefing Request | [it-daily/2026-11-11.md](./it-daily/2026-11-11.md) | [PDF](./it-daily/2026-11-11.pdf) |
