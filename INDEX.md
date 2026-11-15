@@ -75,6 +75,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Week ending | Subject | Markdown | PDF |
 |-------------|---------|----------|-----|
+| 2026-11-15 | Iran policy — Trump after Qatar meeting: war "militarily effectively over," blockade stays; "We don't need a deal with Iran"; Vance redirected; Rubio: "no need for military action"; Reuters: strikes on hold barring provocations; Israel cabinet meets with no announced decision (Significance: HIGH) | [weekly/2026-11-15.md](./weekly/2026-11-15.md) | [PDF](./weekly/2026-11-15.pdf) |
 | 2026-11-08 | Midterms — Democrats win the House and Senate; seven Senate flips; five governorships flip; Alaska and Mississippi uncalled; GOP leadership scramble; Dhillon resigns at DOJ (Significance: HIGH) | [weekly/2026-11-08.md](./weekly/2026-11-08.md) | [PDF](./weekly/2026-11-08.pdf) |
 | 2026-11-01 | Iran strike track and force posture — "96 hours" readiness; allies told to prepare for a short post-midterm campaign; Cooper briefs Trump; "ten minutes" for Pickaxe Mountain; Khamenei orders retaliation "without geographical limitations" (Significance: HIGH) | [weekly/2026-11-01.md](./weekly/2026-11-01.md) | [PDF](./weekly/2026-11-01.pdf) |
 
