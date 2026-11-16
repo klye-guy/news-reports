@@ -102,6 +102,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-16 | Nvidia — Bessent Wants an Outside CEO; "Stand With Jensen" Petition Passes 173,000 Unverified Signatures; Cantwell Letter Hits Lutnick on Chip Enforcement; Earnings Tuesday | [it-daily/2026-11-16.md](./it-daily/2026-11-16.md) | [PDF](./it-daily/2026-11-16.pdf) |
 | 2026-11-15 | Nvidia Fallout — WSJ on Huang's Southeast Asian Data-Center Workaround for Chinese Customers; WaPo Says Rubio Recast CIA Reporting; "Stand With Jensen" Petition Disputed; Earnings Tuesday | [it-daily/2026-11-15.md](./it-daily/2026-11-15.md) | [PDF](./it-daily/2026-11-15.pdf) |
 | 2026-11-14 | Nvidia — Worst Week Since the Tariff Sell-Off; WSJ Says Huang Pushed "Circular" GPU Deals Over Kress's Objections; Researcher Finds Blackwell "Fingerprints" in Chinese Models | [it-daily/2026-11-14.md](./it-daily/2026-11-14.md) | [PDF](./it-daily/2026-11-14.pdf) |
 | 2026-11-13 | Nvidia — Huang Out, Kress Interim CEO and Jones Chair; Reuters Reports a Third Relationship; Employees Petition for His Return; Singapore Says US Gave "Limited" Help | [it-daily/2026-11-13.md](./it-daily/2026-11-13.md) | [PDF](./it-daily/2026-11-13.pdf) |
