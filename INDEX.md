@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-16 | Gulf — US Embassy Bahrain Warns of "Increased Threat of Armed Attacks"; Unconfirmed US Strikes on Qeshm/Bandar-e Kong; IRGC Claims Supertanker Sunk; Two Tankers Hit (Al Dhannah, On Phoenix); Iran Embassy Threatens USS Spruance Officers | [daily/2026-11-16.md](./daily/2026-11-16.md) | [PDF](./daily/2026-11-16.pdf) |
 | 2026-11-15 | Aviation — Duffy: L3Harris Copper-to-Fiber Router "Flooded" ATC Network; Root Cause Not Yet Established; More Than 2,500 Saturday Cancellations; Miami Taxiway Collision | [daily/2026-11-15.md](./daily/2026-11-15.md) | [PDF](./daily/2026-11-15.pdf) |
 | 2026-11-14 | Aviation — FAA Nationwide Ground Stop of About Four Hours After ATC Communications Failure; About 10,000 Cancellations; No Evidence of Cyberattack So Far | [daily/2026-11-14.md](./daily/2026-11-14.md) | [PDF](./daily/2026-11-14.pdf) |
 | 2026-11-13 | Nvidia — Huang Resigns; Kress Interim CEO, Harvey Jones First Board Chair; Stock −4.3%; Senate and House Seek Testimony | [daily/2026-11-13.md](./daily/2026-11-13.md) | [PDF](./daily/2026-11-13.pdf) |
