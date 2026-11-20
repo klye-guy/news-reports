@@ -106,6 +106,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-20 | AI and Chips — Anthropic Opens at $111.50 (~$2T) After $83 IPO; Bloomberg: Nvidia Approached Arm CEO Rene Haas; Rep. Mast: BIS Approved 879K of 3.4M Nvidia/AMD China Chip Requests; Alibaba May Trim 20 GW Target Under New Remote-Access Rule; Palo Alto Buys Applied Compute for $4.5B | [it-daily/2026-11-20.md](./it-daily/2026-11-20.md) | [PDF](./it-daily/2026-11-20.pdf) |
 | 2026-11-19 | AI Majors — Anthropic Prices IPO at $83 (980M Shares, Nasdaq "ANT" Today); Google Ships Gemini 4 Neon; Anthropic's Scanner Credited in Ruby and Drupal Fixes; xAI Sued Over Grok "Hijab-Stripping" Edits; Reuters/Ars: Meta Staff Flagged Muse Cross-Account Leaks | [it-daily/2026-11-19.md](./it-daily/2026-11-19.md) | [PDF](./it-daily/2026-11-19.pdf) |
 | 2026-11-18 | Nvidia After the Beat — Kress: "No Longer Shipping" Licensed Hopper Data-Center Chips to China; Board Chair: Huang Will Not Be Reinstated; Huang Says He Would Return If Asked | [it-daily/2026-11-18.md](./it-daily/2026-11-18.md) | [PDF](./it-daily/2026-11-18.pdf) |
 | 2026-11-17 | Nvidia Reports After Today's Close Under Interim CEO Kress — Board "Not Considering" Huang Return; Commerce Bans Remote GPU Access in Five Countries; Intel Hit With Shareholder Suit | [it-daily/2026-11-17.md](./it-daily/2026-11-17.md) | [PDF](./it-daily/2026-11-17.pdf) |
