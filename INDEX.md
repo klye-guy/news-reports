@@ -10,6 +10,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-20 | Iran Policy — Trump to Axios: "Not Rushing," Decision After the New Year; Netanyahu Presses for Joint Campaign as White House Asks Pentagon for Retaliation Assessments; Senate Rejects Iran War Powers Resolution 48–51; Pentagon: War Cost Exceeds $48B; Iran Limits IAEA Cooperation | [daily/2026-11-20.md](./daily/2026-11-20.md) | [PDF](./daily/2026-11-20.pdf) |
 | 2026-11-19 | Gulf — CENTCOM: No US Personnel Hurt in Iranian Attempts on Kuwait's Ali Al Salem and Bahrain; NYT: Trump Weighing New Extensive Strikes as Netanyahu Presses 4–7 Day Campaign; Trump: "Finish It Off — Soon"; USS George Washington Departs, Two Carriers Remain | [daily/2026-11-19.md](./daily/2026-11-19.md) | [PDF](./daily/2026-11-19.pdf) |
 | 2026-11-18 | Gulf — US Confirms "Self-Defense" Strike on IRGC Missile Site on Qeshm; Iran Widens Attacks to Kuwait's Ali Al Salem (US Patriots) and Bahrain; Kuwait and Bahrain Report Intercepts; Iran Army Claims MQ-9 Shootdown | [daily/2026-11-18.md](./daily/2026-11-18.md) | [PDF](./daily/2026-11-18.pdf) |
 | 2026-11-17 | Gulf — IRGC Claims Third Bahrain Radar Strike (Sheikh Isa); CENTCOM: "FALSE," All Drones Intercepted; Tanker Hit Twice off Khasab, Crew Unaccounted For; IRGC Claims LNG Carrier and Tanker Ablaze; Qeshm Strikes Still Unconfirmed | [daily/2026-11-17.md](./daily/2026-11-17.md) | [PDF](./daily/2026-11-17.pdf) |
