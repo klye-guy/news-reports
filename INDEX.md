@@ -114,6 +114,7 @@ Each row uses a one-line subject taken from the report (first ITEM title). Lette
 
 | Date | Subject | Markdown | PDF |
 |------|---------|----------|-----|
+| 2026-11-27 | Intel and Nvidia — Unredacted Shareholder-Suit Documents Say Commerce Told Intel's CFO the 10% Government Stake Was "Not a Negotiation" and Rejection "Will Have Consequences"; Wired/Ars Ties It to This Week's Nvidia Board Intervention | [it-daily/2026-11-27.md](./it-daily/2026-11-27.md) | [PDF](./it-daily/2026-11-27.pdf) |
 | 2026-11-26 | Microsoft — Threat Intel Says Salt Typhoon and Crystal Typhoon Have Adopted ARTEX (AI Intrusion Framework), Plus North Korean Groups; Behavioral, Not Signature, Detection Advised; M365 Backup Recovery Window Now Up to 10 Years | [it-daily/2026-11-26.md](./it-daily/2026-11-26.md) | [PDF](./it-daily/2026-11-26.pdf) |
 | 2026-11-25 | Microsoft — Reuters: "Code Red" After the 12 NOV Exchange Online Outage (One-Hour Resolution Target; Urgent Fix Took 5–6 Days to Saturate); Azure APIM Classic MZK9-GH0 Unchanged (Still No CVE, No Victim Count) | [it-daily/2026-11-25.md](./it-daily/2026-11-25.md) | [PDF](./it-daily/2026-11-25.pdf) |
 | 2026-11-24 | Azure API Management Classic — Microsoft Service Health Advisory MZK9-GH0 Now Quoted: Developer/Basic/Standard/Premium Affected, Consumption and v2 Not; Microsoft Says Fix Fully Deployed but Stolen Credentials Stay Valid Until You Rotate; Still No CVE | [it-daily/2026-11-24.md](./it-daily/2026-11-24.md) | [PDF](./it-daily/2026-11-24.pdf) |
